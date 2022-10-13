@@ -1,0 +1,38 @@
+/****************************
+Juan Gómez Tejeda - UO281835
+
+Descripción de los estilos que contiene
+*****************************/
+
+Header h1{
+    background-color: aqua;
+    color:red;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    margin-left : 1em;
+    margin-right: 1em;
+}
+Header h2{
+    background-color: darkmagenta;
+    color:gold;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    margin-left : 1em;
+    margin-right: 1em;
+}
+footer{
+    background-color: darkmagenta;
+    color:gold;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    margin-left : 1em;
+    margin-right: 1em;
+}
+aside{
+    background-color: darkmagenta;
+    color:gold;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    margin-left : 1em;
+    margin-right: 1em;
+}
