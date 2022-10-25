@@ -3,14 +3,15 @@ Juan Gómez Tejeda - UO281835
 
 Descripción de los estilos que contiene
 *****************************/
-body header{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    align-self: center;
 
-}
 
 @media (max-width: 400px) {
+    body header{
+        display: grid;
+        grid-template-columns: auto;
+        align-self: center;
+        padding: 1em;
+    }
     body header nav {
         display: grid;
         grid-template-columns: auto;
@@ -24,6 +25,12 @@ body header{
         grid-template-columns: auto auto auto auto auto auto auto auto auto ;
         align-items: center;
         padding: 1em;
+    
+    }
+    body header{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-self: center;
     
     }
 }
