@@ -130,6 +130,14 @@ form p{
     background-color: blueviolet;
     color: white;
 }
+section a:link,footer a:link{
+    background-color: blueviolet;
+    color: white;
+}
+section a:visited,footer a:visited{
+    background-color: blueviolet;
+    color: white;
+}
 form input[type = radio]{
     background-color: white;
     color: purple;
