@@ -5,7 +5,7 @@ Descripción de los estilos que contiene
 *****************************/
 
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     body header{
         display: grid;
         grid-template-columns: auto;
@@ -19,7 +19,77 @@ Descripción de los estilos que contiene
         padding: 1em;
     }
 }
-@media (min-width: 1200px) {
+@media (min-width: 600px) and (max-width: 800px) {
+    body header{
+        display: grid;
+        grid-template-columns: auto;
+        align-self: center;
+        padding: 1em;
+    }
+    body header nav {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-self: center;
+        padding: 1em;
+    }
+}
+@media (min-width: 700px) and (max-width: 900px) {
+    body header{
+        display: grid;
+        grid-template-columns: auto;
+        align-self: center;
+        padding: 1em;
+    }
+    body header nav {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-self: center;
+        padding: 1em;
+    }
+}
+@media (min-width: 900px) and (max-width: 1000px) {
+    body header{
+        display: grid;
+        grid-template-columns: auto;
+        align-self: center;
+        padding: 1em;
+    }
+    body header nav {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        align-self: center;
+        padding: 1em;
+    }
+}
+@media (min-width: 1000px) and (max-width: 1200px) {
+    body header{
+        display: grid;
+        grid-template-columns: auto;
+        align-self: center;
+        padding: 1em;
+    }
+    body header nav {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        align-self: center;
+        padding: 1em;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+    body header{
+        display: grid;
+        grid-template-columns: auto;
+        align-self: center;
+        padding: 1em;
+    }
+    body header nav {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        align-self: center;
+        padding: 1em;
+    }
+}
+@media (min-width: 1400px) {
     body header nav{
         display: grid;
         grid-template-columns: auto auto auto auto auto auto auto auto auto ;
@@ -64,4 +134,9 @@ body main section h2,h3,h4,p{
     align-content: center;
     align-self: center;
     text-align: center;
+}
+section form a{
+    align-self: center;
+    align-content: center;
+    align-items: center;
 }
