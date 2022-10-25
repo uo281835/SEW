@@ -1,0 +1,147 @@
+/****************************
+Juan Gómez Tejeda - UO281835
+
+Descripción de los estilos que contiene
+*****************************/
+/*001*/
+Body{
+    background-color: beige;
+    color: #000000;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    margin-left : 1em;
+    margin-right: 1em;
+    border-radius: 3em;
+    border-color: #000000;
+}
+/*002*/
+Body header{
+    background-color: blueviolet;
+    border-color: gold;
+    color: black;
+    border-radius: 3em;
+}
+
+/*002*/
+Body h2,h3,h4,h5,h6{
+    background-color: gold;
+    align-self: center;
+    color:black;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    margin-left : 1em;
+    margin-right: 1em;
+    border-radius: 1em;
+}
+/*001*/
+footer{
+    background-color: white;
+    color:black;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    margin-left : 1em;
+    margin-right: 1em;
+
+}
+/*003*/
+body p{
+    background-color: white;
+    color:black;
+    border-radius: 1em;
+
+}
+
+/*002*/
+body ul,ol{
+    background-color: white;
+    color:black;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left : 1em;
+    margin-right: 1em;
+    border-radius: 1em;
+}
+
+
+/*002*/
+body li{
+    background-color: white;
+    color:black;
+}
+
+/*003*/
+body header nav{
+    background-color: beige;
+    color:purple;
+    font-size: 1.5em;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    margin-left : 1em;
+    margin-right: 1em;
+    border-radius: 3em;
+}
+body footer a:link{
+    background-color: blueviolet;
+    color:white;
+}
+body header h1{
+    background-color: blueviolet;
+    color:white;
+    font-size: 2em;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    margin-left : 1em;
+    margin-right: 1em;
+    border-radius: 2em;
+}
+/*002*/
+body img{
+    width: 10em;
+    height: 10em;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    margin-left : 1em;
+    margin-right: 1em;
+    border-radius: 3em;
+}
+/*002*/
+body video{
+    width: 10em;
+    height: 10em;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    margin-left : 1em;
+    margin-right: 1em;
+    border-radius: 3em;
+}
+
+
+body table td{
+    background-color: white;
+    color: black;
+    border : 0.1em solid black;
+}
+
+form{
+    background-color: blueviolet;
+    color: white;
+}
+form p{
+    background-color: blueviolet;
+    color: white;
+}
+form input[type = radio]{
+    background-color: white;
+    color: purple;
+}
+body footer{
+    background-color: blueviolet;
+    color: white;
+    border-radius: 1em;
+}
+body footer p{
+    background-color: blueviolet;
+    color: white;
+    border-radius: 1em;
+}
+
