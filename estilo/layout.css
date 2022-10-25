@@ -52,3 +52,16 @@ body main{
     grid-template-columns: auto;
     padding: 2em;
 }
+
+body footer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+body main section h2,h3,h4,p{
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+}
