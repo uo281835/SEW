@@ -1,0 +1,65 @@
+/*001*/
+Body{
+    background-color: white;
+    color: #000000;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    margin-left : 1em;
+    margin-right: 1em;
+    border-radius: 3em;
+    border-color: #000000;
+}
+
+/*002*/
+Body h2,h3,h4,h5,h6{
+    background-color: blue;
+    align-self: center;
+    color:white;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    margin-left : 1em;
+    margin-right: 1em;
+    border-radius: 1em;
+}
+
+body h3{
+    background-color: white;
+    align-self: center;
+    color:black;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    margin-left : 1em;
+    margin-right: 1em;
+    border-radius: 1em;
+}
+
+/*003*/
+body p{
+    background-color: white;
+    color:blue;
+    border-radius: 1em;
+
+}
+
+
+/*002*/
+body img{
+    width: 10em;
+    height: 10em;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    margin-left : 1em;
+    margin-right: 1em;
+    border-radius: 3em;
+}
+/*002*/
+body video{
+    width: 10em;
+    height: 10em;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    margin-left : 1em;
+    margin-right: 1em;
+    border-radius: 3em;
+}
+
