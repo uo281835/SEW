@@ -1,0 +1,5 @@
+{ "type": "MultiLineString", 
+    "coordinates": [
+        [[2, 3], [4, 5]]
+    ]
+}

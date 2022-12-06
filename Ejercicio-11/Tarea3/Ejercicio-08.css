@@ -1,0 +1,31 @@
+
+body main input[ type = "text"]{
+    background-color: white;
+    color: black;
+    font-size: 1.5em;  
+
+}
+body header form  [type = "button"]{
+    background-color: green;
+    color: white;
+}
+
+
+main{
+    margin-left: 3em;
+    margin-right: 3em;
+    background-color: blue;
+    color : white;
+    font-size: 1em;  
+    
+    align-self: center;
+    align-items: center;
+    
+}
+
+form input[type = "button"]{
+    height: 2em;
+    width: 6em;
+    border-radius: 0.5em;
+    font-size: 0.7em;  
+}

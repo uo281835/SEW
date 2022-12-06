@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+   
+    <!--Meter como metadatos el nombre, palabras clave, descripción y definir la viewport-->
+    <meta name = "author" content = "Juan Gómez Tejeda"/>
+    <meta name ="description" content ="Página principal que describe los aspectos básicos de Bootstrap" />
+    <meta name ="keywords" content ="framework, Bootstrap, índice, index, introducción, principal" />
+    <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+    <script src = "calculadoraRPN.js"> </script>
+    <title>Bootstrap: Página principal</title>
+    <link rel="stylesheet" type="text/css" href="ejercicio7.css" />
+    <script src = "Ejercicio7.js"> </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <form>
+            <p><label>Nuevo texto:  <input></label></p>
+            <input type="button" value="Añadir parrafo" onClick = "jqutil.addParagraph()">
+            <input type="button" value="Borrar parrafos" onClick = "jqutil.removeAllParagraphs()">
+            <input type="button" value="Cambiar H1" onClick = "jqutil.changeH1()">
+            <input type="button" value="Recorrer" onClick = "jqutil.recorrer()">
+            <input type="button" value="Ocultar tabla" onClick = "jqutil.hideTable()">
+            <input type="button" value="Ocultar párrafos" onClick = "jqutil.hideParagraphs()">
+            <input type="button" value="Ocultar h1" onClick = "jqutil.hideH1()">
+            <input type="button" value="Ocultar h2" onClick = "jqutil.hideH2()">
+            <input type="button" value="Ocultar h3" onClick = "jqutil.hideH3()">
+           
+          </form>
+          <form>
+            <input type="button" value="Enseñar tabla" onClick = "jqutil.showTable()">
+            <input type="button" value="Enseñar párrafos" onClick = "jqutil.showParagraphs()">
+            <input type="button" value="Enseñar h1" onClick = "jqutil.showH1()">
+            <input type="button" value="Enseñar h2" onClick = "jqutil.showH2()">
+            <input type="button" value="Enseñar h3" onClick = "jqutil.showH3()">
+           
+          </form>
+    <img src= "multimedia/archivos-graficos/Bootstrap_logo.svg.png" alt= "Imagen promocional de Bootstrap 3" />
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <h1>Bootstrap</h1>
+    
+    </header>
+    <main>
+    <section>
+    <h2>Página principal</h2>
+    <p>    Bootstrap es un framework de código libre para creación de páginas web, dirigido principalmente a móviles, 
+        contiene herramientas de desarrollo para HTML, CSS y JavaScript </p>
+    <p>    Bootstrap, originalmente llamado Blueprint de Twitter, fue desarrollado por Mark Otto y Jacob Thornton de Twitter, como un marco de trabajo (framework) para fomentar la consistencia entre las herramientas internas. Antes de Bootstrap, se usaron varias bibliotecas para el desarrollo de interfaces de usuario, lo que generó inconsistencias y una gran carga de trabajo en su mantenimiento. Según el desarrollador de Twitter, Mark Otto, frente a esos desafíos:
+
+        "...un grupo súper pequeño de desarrolladores y yo nos reunimos para diseñar y construir una nueva herramienta interna y vimos la oportunidad de hacer algo más. A través de ese proceso, nos vimos construyendo algo mucho más sustancial que otra herramienta interna. Meses después terminamos con una primera versión de Bootstrap como una manera de documentar y compartir activos y patrones de diseño comunes dentro de la compañía."
+        Mark Otto
+        El primer desarrollo en condiciones reales ocurrió durante la primera «Semana de Hackeo (Hackweek) de Twitter». Mark Otto mostró a algunos colegas cómo acelerar el desarrollo de sus proyectos con la ayuda de la herramienta de trabajo. Como resultado, decenas de temas se han introducido en el marco de trabajo.
+        
+        En agosto del 2011, Twitter liberó Bootstrap como código abierto. En febrero del 2012, se convirtió en el proyecto de desarrollo más popular de GitHub.</p>
+    <h3>Cabecera 3</h3>
+        <p>     Bootstrap es modular y consiste esencialmente en una serie de hojas de estilo LESS que implementan la variedad de componentes de la herramienta. Una hoja de estilo llamada bootstrap.less incluye los componentes de las hojas de estilo. Los desarrolladores pueden adaptar el mismo archivo de Bootstrap, seleccionando los componentes que deseen usar en su proyecto.
+
+        Los ajustes son posibles en una medida limitada a través de una hoja de estilo de configuración central. Los cambios más profundos son posibles mediante las declaraciones LESS.
+        
+        El uso del lenguaje de hojas de estilo LESS permite el uso de variables, funciones y operadores, selectores anidados, así como clases mixin.
+        
+        Desde la versión 2.0, la configuración de Bootstrap también tiene una opción especial de «Personalizar» en la documentación. Por otra parte, los desarrolladores eligen en un formulario los componentes y ajustes deseados, y de ser necesario, los valores de varias opciones a sus necesidades. El paquete consecuentemente generado ya incluye la hoja de estilo CSS compilada previamente.
+        
+        Sistema de cuadrilla y diseño sensible
+        Bootstrap viene con una disposición de cuadrilla estándar de 940 píxeles de ancho. Alternativamente, el desarrollador puede usar un diseño de ancho-variable. Para ambos casos, la herramienta tiene cuatro variaciones para hacer uso de distintas resoluciones y tipos de dispositivos: teléfonos móviles, formato vertical y horizontal, tabletas y computadoras con baja y alta resolución (pantalla ancha). Esto ajusta el ancho de las columnas automáticamente.
+        
+        Comprensión de la hoja de estilo CSS
+        Bootstrap proporciona un conjunto de hojas de estilo que proveen definiciones básicas de estilo para todos los elementos de HTML. Esto otorga una uniformidad al navegador y al sistema de anchura, da una apariencia moderna para el formateo de los elementos de texto, tablas y formularios.
+        
+        Componentes re-utilizables
+        Además de los elementos regulares de HTML, Bootstrap contiene otra interfaz de elementos comúnmente usados. Esta incluye botones con características avanzadas (p.ej. grupo de botones o botones con opción de menú desplegable, listas de navegación, etiquetas horizontales y verticales, ruta de navegación, paginación, etc.), etiquetas, capacidades avanzadas de miniaturas tipográficas, formatos para mensajes de alerta y barras de progreso.
+        
+        Plug-ins de JavaScript
+        Los componentes de JavaScript para Bootstrap están basados en la librería jQuery de JavaScript. Los plug-ins se encuentran en la herramienta de plug-in de jQuery. Proveen elementos adicionales de interfaz de usuario como diálogos, tooltips y carruseles. También extienden la funcionalidad de algunos elementos de interfaz existentes, incluyendo por ejemplo una función de auto-completar para campos de entrada (input). La versión 2.0 soporta los siguientes plug-ins de JavaScript: Modal, Dropdown, Scrollspy, Tab, Tooltip, Popover, Alert, Button, Collapse, Carousel y Typeahead.
+        
+        Una implementación de Bootstrap usando el Dojo toolkit también está disponible. Es llamada Dojo Bootstrap6​7​ y es un puerto de los plug-ins de Twitter Bootstrap. Usa el código Dojo al 100% y tiene soporte para AMD (Asynchronous Module Definition8​).</p>
+        <p>Fue creado por Mark Otto y Jacob Thornton</p>
+        <img src = "multimedia/archivos-graficos/otto.jpg" alt ="Mark Otto"/>
+        <img src = "multimedia/archivos-graficos/jacob-thornton.jpg" alt = "Jacob Thornton"/>
+        <video controls>
+            <source src = "multimedia/archivos-video/video.mp4" type="video/mp4"/>
+        </video> 
+        <audio controls>
+            <source src = "multimedia/archivos-audio/audio.mp3" type="audio/mpeg"/>
+        </audio>
+    
+        <form>
+            <fieldset>
+                <legend>Inicie sesión </legend>
+                <p><label>Nombre de usuario:  <input></label></p>
+                <p><label>Contraseña:  <input></label></p>
+                <p><label>Teléfono: <input type=tel></label></p>
+                <p><label>¿Quiere suscribirse a nuestra newsletter?  <input type=checkbox> </label></p>
+            </fieldset>
+            <fieldset>
+                <legend>¿Le ha gustado la página?</legend>
+                <p><label> Sí <input type=radio name=size>   </label></p>
+                <p><label> No <input type=radio name=size>  </label></p>
+                <p><label>Sugerencias <textarea></textarea></label></p>
+            </fieldset>
+            <a href= "crearCuenta.html" > ¿No tiene cuenta?</a>
+        </form>
+
+       
+        <table>
+            <caption>Lista de la compra</caption>
+            <thead>
+            <tr>
+                <th> Nombre</th>
+                <th> Cantidad</th>
+                <th> Precio</th>
+                <th> Total</th>
+            <tbody>
+            <tr>
+                <td> Patatas</td>
+                <td> 5</td>
+                <td> 8</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td> Pimiento rojo</td>
+                <td> 1</td>
+                <td> 3</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td> Pimiento verde</td>
+                <td> 1</td>
+                <td> 3</td>
+                <td></td>
+            </tr>
+            
+           </table>
+    </section>
+</main>
+    <footer>
+        <p>
+            Información adicional y contacto
+        </p>
+        <p><a href= "https://getbootstrap.com/" > Página web oficial</a></p>
+        <p><a href= "https://getbootstrap.com/docs/5.2/getting-started/introduction/" > documentación</a></p>
+    </footer>
+</body>
+</html>
