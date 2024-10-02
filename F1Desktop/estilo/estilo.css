@@ -26,3 +26,31 @@ body header nav{
     background-color: #b4f5f0;
 }
 
+/* 0 0 2*/
+/*Hereda el color de body*/
+body main {
+    background-color: #041f60;
+}
+
+/* 0 0 3*/
+/*Hereda el color de body*/
+body main h2{
+    background-color: #b4f5f0;
+}
+
+/* 0 0 3*/
+/*Hereda el color de body*/
+body main section{
+    background-color: #b4f5f0;
+}
+/* 0 0 2*/
+/*Hereda el color de body*/
+body aside{
+    background-color: #b4f5f0;
+}
+/* 0 0 2*/
+/*Hereda el color de body*/
+body footer{
+    background-color: #b4f5f0;
+}
+
