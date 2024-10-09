@@ -94,9 +94,13 @@ body p{
     font-size: small;
     
 }
-
+/* 0 0 3*/
 main section a{
     color: #041f60; 
+}
+/* 0 1 2 */
+header a.active{
+    font-weight: bold;
 }
 
 /*0 1 3*/
