@@ -10,15 +10,16 @@
     <meta name="keywords" content="f1, piloto, lewis hamilton, lewis, hamilton" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
     <link rel="icon" href="multimedia/imagenes/favicon.ico"/>
 </head>
 
 <body>
     <header>
-        <h1>F1 Desktop</h1>
+        <h1><a href="index.html">F1 Desktop</a></h1>
         <nav>
             <a href="index.html">Inicio</a>
-            <a href="piloto.html">Piloto</a>
+            <a href="piloto.html" class="active">Piloto</a>
             <a href="noticias.html">Noticias</a>
             <a href="calendario.html">Calendario</a>
             <a href="meteorologia.html">Meteorología</a>
@@ -28,10 +29,12 @@
         </nav>
     </header>
 
+    <p><a href="index.html">Inicio</a> >> Piloto</p>
     <main>
         <h2>Piloto - Lewis Hamilton</h2>
 
-        <section>
+        <article>
+            
             <picture>
                 <source srcset="multimedia/imagenes/fotopersonal1.png" media="(max-width: 465px)"/>
                 <source srcset="multimedia/imagenes/fotopersonal2.png" media="(max-width: 799px)"/>
@@ -47,7 +50,7 @@
                 Lugar de Nacimiento: Stevenage, Inglaterra
                 Lugar de Residencia: Suiza
             </p>
-        </section>
+        </article>
 
         <section>
             <h3>Presentación</h3>
@@ -150,18 +153,28 @@
             <table>
                 <tbody>
                     <tr>
-                        <th scope="col" id="puntosObtenidos">Puntos obtenidos</th>
-                        <th scope="col" id="posicionFinal">Posición final en la clasificación</th>
-                        <th scope="col" id="poles">Poles</th>
-                        <th scope="col" id="victorias">Victorias</th>
-                        <th scope="col" id="podios">Podios</th>
+                        <th scope="row" id="puntosObtenidos">Puntos obtenidos</th>
+                        <td headers="puntosObtenidos">234</td>
                     </tr>
                     <tr>
-                        <td headers="puntosObtenidos">234</td>
+                        <th scope="row" id="posicionFinal">Posición final en la clasificación</th>
                         <td headers="posicionFinal">3º</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" id="poles">Poles</th>
                         <td headers="poles">1</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" id="victorias">Victorias</th>
                         <td headers="victorias">0</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" id="podios">Podios</th>
                         <td headers="podios">6</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" id="escuderia">Escudería</th>
+                        <td headers="escuderia">Mercedes</td>
                     </tr>
                 </tbody>
             </table>
@@ -183,7 +196,7 @@
 
         <section>
             <h3>Multimedia</h3>
-            <video width="80" height="80" controls preload="auto">
+            <video controls preload="auto">
                 <source src="multimedia/videos/video1.mp4" type="video/mp4" />
                 <source src="multimedia/videos/video1.webm" type="video/webm" />
             </video>
@@ -192,9 +205,9 @@
                 <source src="multimedia/audios/audio1.wav" type="audio/wav" />
             </audio>
             <img alt="Foto de Lewis Hamilton"
-                src="multimedia/imagenes/Lewis_Hamilton_2022_São_Paulo_Grand_Prix_(52498120773)_(cropped).jpg" width="80" height="80"/>
+                src="multimedia/imagenes/Lewis_Hamilton_2022_São_Paulo_Grand_Prix_(52498120773)_(cropped).jpg"/>
             <img alt="Fotografía de Lewis Hamilton"
-                src="multimedia/imagenes/TELEMMGLPICT000306816438_trans_NvBQzQNjv4BqBUf8B7jwJjc2Cnz3CBTXYZgojZYlP8f0i9h2tPqCNsM.jpeg" width="80" height="80"/>
+                src="multimedia/imagenes/TELEMMGLPICT000306816438_trans_NvBQzQNjv4BqBUf8B7jwJjc2Cnz3CBTXYZgojZYlP8f0i9h2tPqCNsM.jpeg"/>
         </section>
 
     </main>
