@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE circuito SYSTEM "circuito.dtd">
+<circuito nombre="Suzuka">
+    <longitud>5807 km</longitud>
+    <anchura>12 m</anchura>
+    <fechaCarrera>
+        <dia>7</dia>
+        <mes>4</mes>
+        <year>2024</year>
+    </fechaCarrera>
+    <horaCarrera>
+        <hora>7</hora>
+        <minuto>0</minuto>
+        <segundo>0</segundo>
+    </horaCarrera>
+    <localidad> Suzuka </localidad>
+    <pais> Japón </pais>
+    <referencias>
+        <referencia titular="Artículo sobre la carrera"> https://www.dazn.com/es-ES/news/motor/gp-japon-f1-suzuka-fecha-hora-canal-tv-donde-ver-online-gran-premio-mundial-formula-1/b2tcqfzf8g3g1j6wid17w04pi </referencia>
+        <referencia titular="Artículo de la wikipedia sobre el circuito"> https://es.wikipedia.org/wiki/Circuito_de_Suzuka</referencia>
+        <referencia titular="Artículo de la wikipedia sobre la carrera"> https://es.wikipedia.org/wiki/Gran_Premio_de_Jap%C3%B3n</referencia>
+    </referencias>
+    <fotografias>
+        <fotografia titulo="foto1"> multimedia/images/fotoCircuito1.png</fotografia>
+        <fotografia titulo="foto2"> multimedia/images/fotoCircuito2.png</fotografia>
+        <fotografia titulo="foto3"> multimedia/images/fotoCircuito3.png</fotografia>
+    </fotografias>
+    <videos>
+        <video titulo="video1"> multimedia/videos/videoCircuito1.mp4</video>
+        <video titulo="video2"> multimedia/videos/videoCircuito2.mp4</video>
+        <video titulo="video3"> multimedia/videos/videoCircuito3.mp4</video>
+    </videos>
+    <salida>
+        <coordenadas>
+            <longitud> 136º 31' 55''</longitud>
+            <latitud> -34º 50' 36''</latitud>
+            <altura> 52,31 m</altura>
+        </coordenadas>
+    </salida>
+    <tramos>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <longitud> </longitud>
+                    <latitud> </latitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+    </tramos>
+</circuito>

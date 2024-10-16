@@ -1,0 +1,48 @@
+<!ELEMENT circuito (longitud, anchura, fechaCarrera, horaCarrera, localidad, pais, referencias, fotografias, videos, salida, tramos)>
+
+<!ELEMENT longitud (#PCDATA)>
+
+<!ELEMENT anchura (#PCDATA)>
+
+<!ELEMENT fechaCarrera (dia, mes, year)>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+
+<!ELEMENT horaCarrera (hora, minuto, segundo)>
+<!ELEMENT hora (#PCDATA)>
+<!ELEMENT minuto(#PCDATA)>
+<!ELEMENT segundo (#PCDATA)>
+
+<!ELEMENT localidad (#PCDATA)>
+
+<!ELEMENT pais (#PCDATA)>
+
+<!ELEMENT referencias (referencia, referencia, referencia, referencia*)>
+<!ELEMENT referencia (#PCDATA)>
+
+<!ELEMENT fotografias (fotografia, fotografia?,fotografia?,fotografia?,fotografia?)>
+<!ELEMENT fotografia (#PCDATA)>
+
+<!ELEMENT videos (video?, video?, video?)>
+<!ELEMENT video (#PCDATA)>
+
+<!ELEMENT salida (coordenadas)>
+
+<!ELEMENT coordenadas (longitud, latitud, altura)>
+<!ELEMENT longitud (#PCDATA)>
+<!ELEMENT latitud(#PCDATA)>
+<!ELEMENT altura (#PCDATA)>
+
+<!ELEMENT tramos (tramo*)>
+<!ELEMENT tramo (punto, distancia, numeroSector)>
+<!ELEMENT punto (coordenadas)>
+<!ELEMENT distancia (#PCDATA)>
+<!ELEMENT numeroSector (#PCDATA)>
+
+
+<!ATTLIST circuito nombre CDATA #REQUIRED>
+<!ATTLIST localidad nombre CDATA #REQUIRED>
+<!ATTLIST fotografia titulo CDATA #REQUIRED>
+<!ATTLIST video titulo CDATA #REQUIRED>
+<!ATTLIST referencia titular CDATA #REQUIRED>
