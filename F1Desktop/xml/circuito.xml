@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE circuito SYSTEM "circuito.dtd">
 <circuito nombre="Suzuka">
-    <longitud>5807 km</longitud>
+    <longitudCircuito>5807 km</longitudCircuito>
     <anchura>12 m</anchura>
     <fechaCarrera>
         <dia>7</dia>
@@ -21,9 +21,9 @@
         <referencia titular="Artículo de la wikipedia sobre la carrera"> https://es.wikipedia.org/wiki/Gran_Premio_de_Jap%C3%B3n</referencia>
     </referencias>
     <fotografias>
-        <fotografia titulo="foto1"> multimedia/images/fotoCircuito1.png</fotografia>
-        <fotografia titulo="foto2"> multimedia/images/fotoCircuito2.png</fotografia>
-        <fotografia titulo="foto3"> multimedia/images/fotoCircuito3.png</fotografia>
+        <fotografia titulo="foto1"> multimedia/images/fotoCircuito1.jpg</fotografia>
+        <fotografia titulo="foto2"> multimedia/images/fotoCircuito2.jpg</fotografia>
+        <fotografia titulo="foto3"> multimedia/images/fotoCircuito3.jpg</fotografia>
     </fotografias>
     <videos>
         <video titulo="video1"> multimedia/videos/videoCircuito1.mp4</video>
@@ -32,17 +32,1150 @@
     </videos>
     <salida>
         <coordenadas>
-            <longitud> 136º 31' 55''</longitud>
-            <latitud> -34º 50' 36''</latitud>
-            <altura> 52,31 m</altura>
+            <latitud> 34,8429239</latitud>
+            <longitud> 136,5402045</longitud>
+            <altura> 46,8373725</altura>
         </coordenadas>
     </salida>
     <tramos>
         <tramo>
             <punto>
                 <coordenadas>
-                    <longitud> </longitud>
+                    <latitud>34,8425391 </latitud>
+                    <longitud>136,5363618 </longitud>
+                    <altura>54,1276576 </altura>
+                </coordenadas>
+            </punto>
+            <distancia>376,6 </distancia>
+            <numeroSector>1 </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
                     <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
+                    <altura> </altura>
+                </coordenadas>
+            </punto>
+            <distancia> </distancia>
+            <numeroSector> </numeroSector>
+        </tramo>
+        <tramo>
+            <punto>
+                <coordenadas>
+                    <latitud> </latitud>
+                    <longitud> </longitud>
                     <altura> </altura>
                 </coordenadas>
             </punto>
