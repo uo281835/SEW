@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE circuito SYSTEM "circuito.dtd">
-<circuito nombre="Suzuka">
+
+<circuito 
+xmlns="http://www.uniovi.es"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xsi:schemaLocation="http://www.uniovi.es circuito.xsd"
+nombre="Suzuka">
     <longitudCircuito unidad="m">5807</longitudCircuito>
     <anchura unidad="m">12</anchura>
     <fechaCarrera>
