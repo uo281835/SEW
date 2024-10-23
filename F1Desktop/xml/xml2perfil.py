@@ -30,5 +30,5 @@ def crearSVG():
     return result
 
 def main():
-    resultado = crearKML()
+    resultado = crearSVG()
     print(resultado)
