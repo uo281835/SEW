@@ -31,21 +31,20 @@ class Pais{
     }
 
     escribirCoordenadas(){
-        document.write("<p> Coordenadas de la línea de meta "+this.lineaMeta+"</p>");
+        document.querySelector("body main p").innerHTML = ("<p> Coordenadas de la línea de meta "+this.lineaMeta+"</p>");
     }
 
 
 }
 
-/*
+
 var pais = new Pais("Japón", "Tokio", "Suzuka");
 pais.rellenarDatos("123719238", "Monarquía Parlamentaria", "34.8429239,136.5402045,46.8373725", "Sintoísmo");
 
 console.log(document.querySelector("body"))
-document.querySelector("body main").write("<section>");
-document.querySelector("body main").append("<h3>"+pais.getNombre()+"</h3>");
-document.querySelector("main").write("<h4>"+pais.getCapital()+"</h4>");
-document.querySelector("main").write(pais.getInfoSecundaria());
-pais.querySelector("main").escribirCoordenadas();
-document.querySelector("main").write("</section>");
-*/
+//document.querySelector("body main").write("<section>");
+document.querySelector("body main h3").innerHTML = ("<h3>"+pais.getNombre()+"</h3>");
+document.querySelector("body main h4").innerHTML=("<h4>"+pais.getCapital()+"</h4>");
+document.querySelector("body main ul").innerHTML = (pais.getInfoSecundaria());
+pais.escribirCoordenadas();
+

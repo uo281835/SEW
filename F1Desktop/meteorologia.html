@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
     <link rel="icon" href="multimedia/imagenes/favicon.ico"/>
-    <script src="/F1Desktop/js/pais.js"></script>
+    
 </head>
 
 <body>
@@ -33,18 +33,16 @@
     <h2>Meteorología</h2>
     <!-- Datos con el contenidos que aparece en el navegador -->
     <main>
-        <script>
-            var pais = new Pais("Japón", "Tokio", "Suzuka");
-            pais.rellenarDatos("123719238", "Monarquía Parlamentaria", "34.8429239,136.5402045,46.8373725", "Sintoísmo");
-            document.write("<section>");
-            document.write("<h3>"+pais.getNombre()+"</h3>");
-            document.write("<h4>"+pais.getCapital()+"</h4>");
-            document.write(pais.getInfoSecundaria());
-            pais.escribirCoordenadas();
-            document.write("<section>");
-        </script>
+        <section>
+        <h3></h3>
+        <h4></h4>
+       <ul>
+
+       </ul>
+       <p></p>
+        </section>
     </main>
-    
+    <script src="/F1Desktop/js/pais.js"></script>
 
     <footer>
         <p>En desarrollo</p>
