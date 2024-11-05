@@ -16,14 +16,8 @@ def escrituraPrologo(archivo, nombre):
     archivo.write('<?xml version="1.0" encoding="UTF-8"?>\n')
     archivo.write('<kml xmlns="http://www.opengis.net/kml/2.2">\n')
     archivo.write("<Document>\n")
-    archivo.write("<Placemark>\n")
-    archivo.write("<name> "+nombre+"</name>\n")
-    archivo.write("<LineString>\n")
-    # la etiqueta <extrude> extiende la línea hasta el suelo
-    archivo.write("<extrude>1</extrude>\n")
-    # La etiqueta <tessellate> descompone la línea en porciones pequeñas
-    archivo.write("<tessellate>1</tessellate>\n")
-    archivo.write("<coordinates>\n")
+    
+    
     return result
 
 
@@ -31,16 +25,7 @@ def escrituraEpilogo(archivo):
     result =""
     """ Escribe en el archivo de salida el epílogo del archivo KML"""
 
-    archivo.write("</coordinates>\n")
-    archivo.write("<altitudeMode>relativeToGround</altitudeMode>\n")
-    archivo.write("</LineString>\n")
-    archivo.write("<Style> id='lineaRoja'>\n")
-    archivo.write("<LineStyle>\n")
-    archivo.write("<color>#ff0000ff</color>\n")
-    archivo.write("<width>5</width>\n")
-    archivo.write("</LineStyle>\n")
-    archivo.write("</Style>\n")
-    archivo.write("</Placemark>\n")
+    
     archivo.write("</Document>\n")
     archivo.write("</kml>\n")
     return result
@@ -51,6 +36,10 @@ def escrituraEpilogo(archivo):
 
 def tramoToKML(elemento, archivo):
   print(elemento.tag)
+ 
+  archivo.write("<Placemark>\n")
+  archivo.write("<name> punto </name>\n")
+  archivo.write("<Point><coordinates>\n")
   coordenadas = elemento.find('punto/coordenadas')
   print(coordenadas.tag)
   longitud = coordenadas.find('longitud')
@@ -59,6 +48,7 @@ def tramoToKML(elemento, archivo):
   print(longitud.text,",",latitud.text,",",altitud.text)
   texto = longitud.text+","+latitud.text+","+altitud.text+ "\n"
   archivo.write(texto)
+  archivo.write("</coordinates></Point></Placemark>\n")
 
 def main():
   print(main.__doc__)

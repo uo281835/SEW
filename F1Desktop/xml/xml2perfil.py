@@ -1,34 +1,77 @@
 import xml.etree.ElementTree as ET
 
-def escrituraPrologo():
-    result = ""
 
-    return result
+##EXPRESIONES XPATH
+##TODOS LOS TRAMOS : */tramo
+##TODOS LOS PUNTOS : */tramo/punto
 
-def escrituraEpilogo():
-    result =""
+nombreFichero = "circuito.xml"
+nombreSalida = "circuito"
 
-    return result
 
-def escrituraRuta():
-    lista = [1,2,4,5]
-    result =""
-    for i in lista:
-        result+=escrituraPunto(i)
-    return result
+def escrituraPrologo(archivo, nombre):
+    archivo.write('<?xml version="1.0" encoding="UTF-8"?>\n')
+    archivo.write('<svg xmlns="http://www.w3.org/2000/svg" version="2.0">\n')
+    archivo.write("<polyline points =\"0,0 \n")
 
-def escrituraPunto(punto):
-    result =""
 
-    return result
+def escrituraEpilogo(archivo):
+    archivo.write("0,0 \" stroke=\"red\"/>\n")
+    archivo.write("</svg>\n")
 
-def crearSVG():
-    result =""
-    result+=escrituraPrologo()
-    result+=escrituraRuta()
-    result+=escrituraEpilogo()
-    return result
+def tramoToKML(elemento, archivo):
+  print(elemento.tag)
+ 
+  coordenadas = elemento.find('punto/coordenadas')
+  print(coordenadas.tag)
+  altitud = coordenadas.find('altura')
+  distancia = archivo.find('distancia')
+  texto =distancia.text+","+altitud.text+" \n"
+  archivo.write(texto)
 
 def main():
-    resultado = crearSVG()
-    print(resultado)
+  print(main.__doc__)
+  ##Abre el archivo xml
+  try:
+    archivo = open(nombreFichero, 'r')
+  except IOError:
+    print('No se encuentra el archivo ', nombreFichero)
+    exit()
+
+  ##Crea el archivo kml
+  try:
+    salida = open(nombreSalida + ".svg", 'w')
+  except IOError:
+    print('No se puede crear el archivo ', nombreSalida + ".svg")
+    exit()
+
+  # Escribe la cabecera del archivo de salida
+  escrituraPrologo(salida, nombreFichero)
+
+  # Parsea el archivo
+  try:
+    arbol = ET.parse(nombreFichero)
+
+  except IOError:
+    print('No se encuentra el archivo ', nombreFichero)
+    exit()
+
+  except ET.ParseError:
+    print("Error procesando en el archivo XML = ", nombreFichero)
+    exit()
+
+  raiz = arbol.getroot()
+
+  expresionXPath = "*/tramo"
+
+  resultadoExpresion = raiz.findall(expresionXPath)
+
+  # Recorrido de los tramos
+  for hijo in resultadoExpresion:
+    tramoToKML(hijo, salida)
+
+  escrituraEpilogo(salida)
+  salida.close()
+
+if __name__ == "__main__":
+    main()
