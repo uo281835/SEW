@@ -61,6 +61,14 @@ class Memoria{
             document.write("</article>");
         }
     }
+
+    addEventListeners(){
+        document.querySelector("article[data-element]").addEventListener("click",this.flipCard.bind(card,this));
+    }
+
+    flipCard(game){
+        
+    }
     constructor(){
        this.initElements();
        this.hasFlippedCard = false;

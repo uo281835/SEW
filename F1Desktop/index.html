@@ -11,6 +11,8 @@
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
     <link rel="icon" href="multimedia/imagenes/favicon.ico"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/fondo.js"></script>
 </head>
 
 <body>
@@ -29,14 +31,21 @@
     </header>
       
 
-    <h2>Página principal</h2>
-    <!-- Datos con el contenidos que aparece en el navegador -->
-    <p>En desarrollo</p>
-    
-
-    <footer>
+    <main>
+        <h2>Página principal</h2>
+        <!-- Datos con el contenidos que aparece en el navegador -->
         <p>En desarrollo</p>
-    </footer>
+        
+    
+        <script>
+            fondo = new Fondo("Japon","Tokio","Suzuka");
+            fondo.obtenerImagenes();
+        </script>
+        <footer>
+            <p>En desarrollo</p>
+        </footer>
+    </main>
+   
 
 </body>
 </html>
