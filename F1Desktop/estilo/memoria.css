@@ -1,0 +1,50 @@
+h2{
+    text-align: center;
+}
+main{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+main article{
+    flex-basis: 15%;
+    width: 4em;
+    height: 12em;
+    margin: 2em;
+    transform: scale(1);
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+article[data-state="flip"] {
+    transform: rotateY(180deg);
+}
+article[data-state="revealed"] {
+    transform: rotateY(180deg);
+}
+article h3,
+article img {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 5px;
+    background: #1C7CCC;
+    backface-visibility: hidden;
+}
+
+article h3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+article img {
+    transform: rotateY(180deg);
+}
+main article img{
+    width: 6em;
+    height: 6em;
+}
