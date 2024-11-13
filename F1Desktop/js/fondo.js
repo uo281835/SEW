@@ -13,8 +13,8 @@ class Fondo{
                 format: "json"
             })
         .done(function(data) {
-            var linkFoto = data.items[0].link;
-            var mediaFoto =data.items[0].media.m;
+            var linkFoto = data.items[1].link;
+            var mediaFoto =data.items[1].media.m;
             console.log(linkFoto)
             console.log(mediaFoto)
             $("body").css("background-image", "url('"+mediaFoto+"')")
