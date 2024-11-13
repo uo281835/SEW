@@ -1,0 +1,15 @@
+article{
+    background-color: aliceblue;
+    border-radius: 3em;
+    color: black;
+}
+
+article h3{
+    font-size: 4em;
+    color: darkblue;
+}
+
+main article img{
+    width: 3em;
+    height: 3em;
+}
