@@ -1,11 +1,15 @@
-article{
+main section article{
     background-color: aliceblue;
-    border-radius: 3em;
+    border-radius: 1em;
     color: black;
 }
 
+main section article p{
+    background-color: aliceblue;
+}
+
 article h3{
-    font-size: 4em;
+    font-size: 1em;
     color: darkblue;
 }
 

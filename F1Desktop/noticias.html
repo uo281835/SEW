@@ -11,6 +11,8 @@
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
     <link rel="icon" href="multimedia/imagenes/favicon.ico"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="/F1Desktop/js/noticias.js"></script>
 </head>
 
 <body>
@@ -29,10 +31,19 @@
     </header>
     <p><a href="index.html">Inicio</a> >> Noticias</p>
 
+    <p></p>
     <h2>Noticias</h2>
     <!-- Datos con el contenidos que aparece en el navegador -->
     <p>En desarrollo</p>
-    
+    <main>
+        <script>
+            var noticias = new Noticias();
+        </script>
+        <p><input type="file" onchange="noticias.readInputFile(this.files);"></p>
+        <section>
+            
+        </section>
+    </main>
 
     <footer>
         <p>En desarrollo</p>

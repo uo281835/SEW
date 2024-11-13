@@ -50,11 +50,11 @@ class Pais{
             success: function(data){
                
                 var string = "<article><h3>Ciudad: "+$('city',data).attr("name") + "</h3>";
-                string+="<p> Temperatura maxima: "+$('temperature',data).attr("max")+"</p>";
-                string+="<p> Temperatura minima: "+$('temperature',data).attr("min")+"</p>";
+                string += "<img src = '"+"http://openweathermap.org/img/w/"+$('weather',data).attr("icon")+".png'"+"alt='iconoTiempo'/></article>";
+                string+="<p> Temperatura maxima: "+$('temperature',data).attr("max")+" ºC</p>";
+                string+="<p> Temperatura minima: "+$('temperature',data).attr("min")+" ºC</p>";
                 string+="<p> Humedad: "+$('humidity',data).attr("value")+"</p>";
                 string += "<p>Precipitación: " + $('precipitation',data).attr("value") + "</p>";
-                string += "<img src = '"+"http://openweathermap.org/img/w/"+$('weather',data).attr("icon")+".png'"+"/></article>";
                 $("article").html(string);
             },
             error:function(){
