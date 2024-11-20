@@ -13,6 +13,8 @@
     <link rel="icon" href="multimedia/imagenes/favicon.ico"/>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="/F1Desktop/js/viajes.js"></script>
+   
+
 </head>
 
 <body>
@@ -36,11 +38,14 @@
     <p>En desarrollo</p>
     <main>
         <h3>Mapa</h3>
+        <section ></section>
+        <div ></div>
         <script>
             var viajes = new Viajes();
-            
         </script>
     </main>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU&callback=viajes.showDynamicMap" async defer></script>
 
     <footer>
         <p>En desarrollo</p>

@@ -58,6 +58,48 @@ class Viajes{
         this.imagenMapa = url + centro + zoom + tamaño + marcador + sensor + apiKey;
         $("h3:contains('Mapa')").after("<img src='"+this.imagenMapa+"' alt='mapa estático del usuario' />");
       }
+
+      showDynamicMap(){
+        console.log("enseñando mapa")
+        console.log(this)
+        var centro = {lat:0, lng:0}
+        console.log(centro)
+        var mapaGeoposicionado = new google.maps.Map(document.querySelector('section'),{
+            zoom: 8,
+            center:centro,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+        
+        var infoWindow = new google.maps.InfoWindow;
+        if (navigator.geolocation) {
+              navigator.geolocation.getCurrentPosition(function(position) {
+                var pos = {
+                  lat: position.coords.latitude,
+                  lng: position.coords.longitude
+                };
+    
+                infoWindow.setPosition(pos);
+                infoWindow.setContent('Localización encontrada');
+                infoWindow.open(mapaGeoposicionado);
+                mapaGeoposicionado.setCenter(pos);
+              }, function() {
+                handleLocationError(true, infoWindow, mapaGeoposicionado.getCenter());
+              });
+            } else {
+              // Browser doesn't support Geolocation
+              handleLocationError(false, infoWindow, mapaGeoposicionado.getCenter());
+            }
+        }
+  
+        
+        
+        handleLocationError(browserHasGeolocation, infoWindow, pos) {
+            infoWindow.setPosition(pos);
+            infoWindow.setContent(browserHasGeolocation ?
+                                  'Error: Ha fallado la geolocalización' :
+                                  'Error: Su navegador no soporta geolocalización');
+            infoWindow.open(dynamicMap);
+      }
     
     
     }
