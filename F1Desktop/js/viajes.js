@@ -11,7 +11,7 @@ class Viajes{
         this.precisionAltitud = posicion.coords.altitudeAccuracy;
         this.rumbo            = posicion.coords.heading;
         this.velocidad        = posicion.coords.speed;   
-        viajes.showMap();    
+        this.showMap()
     }
 
     verErrores(error){
@@ -64,8 +64,8 @@ class Viajes{
         console.log(this)
         var centro = {lat:0, lng:0}
         console.log(centro)
-        var mapaGeoposicionado = new google.maps.Map(document.querySelector('section'),{
-            zoom: 8,
+        var mapaGeoposicionado = new google.maps.Map(document.querySelector('article'),{
+            zoom: 10,
             center:centro,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         });

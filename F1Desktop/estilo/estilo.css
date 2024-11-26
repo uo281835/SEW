@@ -152,9 +152,13 @@ td{
 th{
     border: 3px solid #000;
 }
-
-main section>div{
-    width: 100%;
-    height: 50%;
+article{
+    width: 30em;
+    height: 30em;
 }
+main article>div{
+    width: 100%;
+    height: 100%;
+}
+
 
