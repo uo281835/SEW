@@ -12,8 +12,26 @@
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
     <link rel="stylesheet" type="text/css" href="estilo/semaforo.css" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
     <script src="/F1Desktop/js/semaforo.js"></script>
 
+    <?php
+
+        class Record{
+
+            private $server;
+            private $user;
+            private $pass;
+            private $dbname;
+
+            public function __construct(){
+                $this->server = "localhost";
+                $this->user = "DBUSER2024";
+                $this->pass = "DBPSWD2024";
+                $this->dbname = "records";
+            }
+        }
+    ?>
 </head>
 
 <body>

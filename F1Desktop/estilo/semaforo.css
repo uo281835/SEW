@@ -8,21 +8,22 @@
     to{background-color: darkgray}
   }
 body {
-    width: 100%;
+    width: 70%;
     height: 100%;
     margin: 3em;
   }
   
   main {
-      width: 60%;
+      width: 50%;
       height: 50%;
       margin: auto;
       
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4, 25%);
       grid-template-rows: 1fr 1fr 1fr;
       gap: 5% 3%;
       align-items: center;
+      padding: 3em;
   }
   
   h2 {
@@ -68,4 +69,11 @@ main.load div:nth-of-type(4) {
 
 main.unload div{
     animation: 0.1s encender 0s forwards;
+}
+
+form{
+    width: 100%;
+}
+label{
+    color: white;
 }

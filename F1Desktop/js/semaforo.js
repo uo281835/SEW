@@ -61,6 +61,57 @@ class Semaforo{
         document.querySelector("main").classList.remove("load","unload");
         document.querySelectorAll("button")[1].setAttribute("disabled","true");
         document.querySelectorAll("button")[0].removeAttribute("disabled");
+        this.createRecordForm();
+    }
+    createRecordForm(){
+        var form = document.createElement("form");
+
+        var labelName = document.createElement("label");
+        labelName.textContent="Nombre";
+
+        var name = document.createElement("input");
+        name.setAttribute("type", "text")
+        labelName.appendChild(name);
+
+        var labelSurname = document.createElement("label");
+        labelSurname.textContent="Apellido";
+        
+        var surname = document.createElement("input");
+        name.setAttribute("type", "number")
+        labelSurname.appendChild(surname);
+
+        var labelLevel = document.createElement("label");
+        labelLevel.textContent="Dificultad";
+        
+        var level = document.createElement("input");
+        level.setAttribute("type", "number");
+        level.setAttribute("contenteditable", "false");
+        level.value= this.difficulty*10;
+        labelLevel.appendChild(level);
+
+
+        var labelScore = document.createElement("label");
+        labelScore.textContent="Puntuación";
+
+        var score = document.createElement("input");
+        score.setAttribute("type", "number");
+        score.setAttribute("contenteditable", "false");
+        score.value=-this.unload_moment.getMilliseconds()+this.clic_moment.getMilliseconds();
+        labelScore.appendChild(score);
+
+        var submit = document.createElement("input");
+        submit.setAttribute("type", "submit");
+        submit.textContent ="Submit";
+
+        form.appendChild(labelName);
+        form.appendChild(labelSurname);
+        form.appendChild(labelLevel);
+        form.appendChild(labelScore);
+        form.appendChild(submit);
+
+        $("main").append(form);
+
+
     }
 
 }
