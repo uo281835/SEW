@@ -10,7 +10,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/agenda_grid.css" />
+
     <link rel="icon" href="multimedia/imagenes/favicon.ico"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
     <script src="/F1Desktop/js/agenda.js"></script>
 </head>
 
@@ -30,10 +34,18 @@
     </header>
     <p><a href="index.html">Inicio</a> >> Calendario</p>
 
-    <h2>Calendario</h2>
-    <!-- Datos con el contenidos que aparece en el navegador -->
-    <p>En desarrollo</p>
     
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    
+    <main>
+        <h2>Calendario</h2>
+        <button onclick="calendario.getInfo()">Ver Carreras</button>
+        <section></section>
+        <script>
+            var calendario = new Agenda();
+        </script>
+        
+    </main>
 
     <footer>
         <p>En desarrollo</p>

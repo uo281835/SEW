@@ -1,0 +1,32 @@
+main section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+body section article{
+    border: solid;
+    border: darkblue;
+    height: 90%;
+    width: 60%;
+    background: white;
+    border-radius: 1em;
+    padding: 0.5em;
+    margin-top: 1em;
+    
+}
+
+body section article p{
+    border: solid;
+    border: darkblue;
+    background: white;
+}
+
+body section article h3{
+    border: solid;
+    border: darkblue;
+    background: darkblue;
+color: white;
+border-radius: 1em;
+padding: 1em;
+}
