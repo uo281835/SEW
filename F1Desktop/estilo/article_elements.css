@@ -2,6 +2,10 @@ main section article{
     background-color: aliceblue;
     border-radius: 1em;
     color: black;
+    display: flex;
+    flex-direction: column;
+    width: 21em;
+    height: auto;
 }
 
 main section article p{
@@ -17,3 +21,4 @@ main article img{
     width: 3em;
     height: 3em;
 }
+
