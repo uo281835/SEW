@@ -164,6 +164,6 @@ class Memoria{
     disableCards(){
         this.firstCard.setAttribute("data-state","revealed");
         this.secondCard.setAttribute("data-state","revealed");
-        this.resetBoard();
+        this.resetBoard(); 
     }
 }
