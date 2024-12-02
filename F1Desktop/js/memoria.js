@@ -112,18 +112,31 @@ class Memoria{
     }
 
     shuffleElements(){
-        //CAMBIAR
-        this.elements.sort((a,b)=>a-b);
+        //Crear lista nueva
+        var listaNueva = new Array(12);
+        var lista2 = this.elements
+        //Bucle for
+        //  RNG
+        //  Coger esa posición
+        //  Borrarla
+
+        
+        for(var i =0; i<12; i++){
+            var posicion = Math.floor(Math.random()*lista2.length);
+            var dato = lista2[posicion];
+            listaNueva[i]=dato;
+            lista2 = lista2.filter((a)=>a!==dato);
+        }
+        //Asignar
+        this.elements = listaNueva;
+
     }
 
     unflipCards(){
         this.lockBoard=true;
         this.firstCard.setAttribute("data-state","");
         this.secondCard.setAttribute("data-state","");
-        var f = function(){
-            this.resetBoard()
-        }.bind(this)
-        setTimeout(f, 1000);
+        this.resetBoard();
     }
 
     resetBoard(){
@@ -140,7 +153,10 @@ class Memoria{
             if (val1 == val2){
                 this.disableCards();
             } else{
-                this.unflipCards();
+                var f = function(){
+                    this.unflipCards()
+                }.bind(this)
+                setTimeout(f, 1000);
             }
         }
     }
