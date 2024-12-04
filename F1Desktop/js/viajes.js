@@ -1,6 +1,16 @@
 class Viajes{
     constructor(){
         navigator.geolocation.getCurrentPosition(this.getPosicion.bind(this), this.verErrores.bind(this));
+        this.slides = document.querySelectorAll("img");
+
+        // select next slide button
+        this.nextSlide = document.querySelector("button:nth-of-type(1)");
+
+        // current slide counter
+        this.curSlide = 9;
+        // maximum number of slides
+        this.maxSlide = slides.length - 1;
+        this.prevSlide = document.querySelector("button:nth-of-type(2)");
     }
 
     getPosicion(posicion){
@@ -100,6 +110,40 @@ class Viajes{
                                   'Error: Su navegador no soporta geolocalización');
             infoWindow.open(dynamicMap);
       }
-    
+
+      siguienteImagen(){
+        if (this.curSlide === this.maxSlide) {
+          this.curSlide = 0;
+        } else {
+          this.curSlide++;
+        }
+
+        //   move slide by -100%
+        this.slides.forEach((slide, indx) => {
+          var trans = 100 * (indx - curSlide);
+          $(slide).css('transform', 'translateX(' + trans + '%)')
+        });
+      }
+      
+      previaImagen(){
+        // check if current slide is the first and reset current slide to last
+        if (this.curSlide === 0) {
+          this.curSlide = this.maxSlide;
+        } else {
+          this.curSlide--;
+        }
+
+        //   move slide by 100%
+        this.slides.forEach((slide, indx) => {
+          var trans = 100 * (indx - curSlide);
+          $(slide).css('transform', 'translateX(' + trans + '%)')
+        });
+      }
+      inicializarCarrousel(){
+        // add event listener and navigation functionality
+        this.nextSlide.addEventListener("click",this.siguienteImagen.bind(this));
+        // add event listener and navigation functionality
+        this.prevSlide.addEventListener("click", this.previaImagen.bind(this));
+      }
     
     }
