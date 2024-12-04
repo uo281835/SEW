@@ -65,19 +65,26 @@ class Semaforo{
     }
     createRecordForm(){
         var form = document.createElement("form");
+        form.setAttribute("action", "#");
+        form.setAttribute("method", "post");
+        form.setAttribute("name","record")
 
         var labelName = document.createElement("label");
         labelName.textContent="Nombre";
 
         var name = document.createElement("input");
-        name.setAttribute("type", "text")
+        name.setAttribute("type", "text");
+        name.setAttribute("name", "nombre");
+        name.setAttribute("title", "nombre");
         labelName.appendChild(name);
 
         var labelSurname = document.createElement("label");
         labelSurname.textContent="Apellido";
         
         var surname = document.createElement("input");
-        name.setAttribute("type", "number")
+        surname.setAttribute("type", "text");
+        surname.setAttribute("name", "apellidos");
+        surname.setAttribute("title", "apellidos");
         labelSurname.appendChild(surname);
 
         var labelLevel = document.createElement("label");
@@ -85,6 +92,8 @@ class Semaforo{
         
         var level = document.createElement("input");
         level.setAttribute("type", "number");
+        level.setAttribute("name", "nivel");
+        level.setAttribute("title", "nivel");
         level.setAttribute("contenteditable", "false");
         level.value= this.difficulty*10;
         labelLevel.appendChild(level);
@@ -95,6 +104,8 @@ class Semaforo{
 
         var score = document.createElement("input");
         score.setAttribute("type", "number");
+        score.setAttribute("name", "tiempo");
+        score.setAttribute("title", "tiempo");
         score.setAttribute("contenteditable", "false");
         score.value=-this.unload_moment.getMilliseconds()+this.clic_moment.getMilliseconds();
         labelScore.appendChild(score);
