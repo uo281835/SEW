@@ -21,9 +21,9 @@
         <referencia titular="Artículo de la wikipedia sobre la carrera"> https://es.wikipedia.org/wiki/Gran_Premio_de_Jap%C3%B3n</referencia>
     </referencias>
     <fotografias>
-        <fotografia titulo="foto1"> multimedia/images/fotoCircuito1.jpg</fotografia>
-        <fotografia titulo="foto2"> multimedia/images/fotoCircuito2.jpg</fotografia>
-        <fotografia titulo="foto3"> multimedia/images/fotoCircuito3.jpg</fotografia>
+        <fotografia titulo="foto1"> multimedia/imagenes/fotoCircuito1.jpg</fotografia>
+        <fotografia titulo="foto2"> multimedia/imagenes/fotoCircuito2.jpg</fotografia>
+        <fotografia titulo="foto3"> multimedia/imagenes/fotoCircuito3.jpg</fotografia>
     </fotografias>
     <videos>
         <video titulo="video1"> multimedia/videos/videoCircuito1.mp4</video>

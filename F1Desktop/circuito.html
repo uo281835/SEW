@@ -11,6 +11,9 @@
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
     <link rel="icon" href="multimedia/imagenes/favicon.ico"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script src="/F1Desktop/js/circuito.js"></script>
 </head>
 
 <body>
@@ -33,6 +36,13 @@
         <h2>Circuito - Suzuka (Suzuka, Japón)</h2>
         <!-- Datos con el contenidos que aparece en el navegador -->
         <p>En desarrollo</p>
+        <script>
+            var circuito = new Circuito();
+
+        </script>
+        <p><input type="file" onchange="circuito.readXML(this.files);" name="XML">XML</p>
+        <p><input type="file" onchange="circuito.readKML(this.files);" value="KML">KML</p>
+        <p><input type="file" onchange="circuito.readSVG(this.files);" title="SVG">SVG</p>
     </main>
     
     
