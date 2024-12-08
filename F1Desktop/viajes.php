@@ -66,8 +66,49 @@
                     $URLfoto = $foto->media->m;
                     echo "<img alt='".$titulo."' src='".$URLfoto."' />";
                 }
-                echo "<button> &gt; </button>"
-                echo "<button> &lt; </button>"
+                echo "<button> &gt; </button>";
+                echo "<button> &lt; </button>";
+            }
+        }
+    ?>
+    <?php 
+        class Moneda{
+            private $monedaLocal;
+            private $monedaCambio;
+            public function __construct($monedaLocal, $monedaCambio){
+                $this->monedaLocal = $monedaLocal;
+                $this->monedaCambio = $monedaCambio;
+            }
+
+            public function getConversion(){
+                $req_url = 'https://v6.exchangerate-api.com/v6/APIKEY/latest/'.$this->monedaLocal;
+                $response_json = file_get_contents($req_url);
+                
+                // Continuing if we got a result
+                if(false !== $response_json) {
+                
+                    // Try/catch for json_decode operation
+                    try {
+                
+                        // Decoding
+                        $response = json_decode($response_json);
+                
+                        // Check for success
+                        if('success' === $response->result) {
+                
+                            // YOUR APPLICATION CODE HERE, e.g.
+                            $base_price = 1; // Your price in USD
+                            $EUR_price = round(($base_price * $response->conversion_rates->EUR), 2);
+                            echo '<p>  '.$base_price.' Yenes equivalen a '.$EUR_price. '€<p>';
+                
+                        }
+                
+                    }
+                    catch(Exception $e) {
+                        // Handle JSON parse error...
+                    }
+                
+                }
             }
         }
     ?>
@@ -106,6 +147,9 @@
             <?php 
                 $carrousel = new Carrousel("tokio","japon");
                 $carrousel->crearCarrusel(10);
+
+                $moneda = new Moneda("JPY","EUR");
+                $moneda->getConversion()
             ?>
             <script>
                 viajes.inicializarCarrousel();
