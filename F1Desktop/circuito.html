@@ -36,6 +36,7 @@
         <h2>Circuito - Suzuka (Suzuka, Japón)</h2>
         <!-- Datos con el contenidos que aparece en el navegador -->
         <p>En desarrollo</p>
+        <article></article>
         <script>
             var circuito = new Circuito();
 
@@ -44,6 +45,9 @@
         <p><input type="file" onchange="circuito.readKML(this.files);" value="KML">KML</p>
         <p><input type="file" onchange="circuito.readSVG(this.files);" title="SVG">SVG</p>
     </main>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU&callback=circuito.showDynamicMap" ></script>
+
     
     
 

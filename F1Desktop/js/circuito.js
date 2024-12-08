@@ -1,5 +1,6 @@
 class Circuito{
     constructor() {
+        this.listaRuta = new Array();
         if (window.File && window.FileReader && window.FileList && window.Blob) {  
             document.querySelectorAll("p")[1].innerHTML=("<p>Este navegador soporta el API File </p>");
         }
@@ -247,64 +248,115 @@ class Circuito{
         }
         
     }
+
+    showDynamicMap(){
+        console.log("enseñando mapa")
+        console.log(this)
+        var centro = {lat:34.8429239, lng:136.5402045}
+        console.log(centro)
+        var mapaGeoposicionado = new google.maps.Map(document.querySelector('article'),{
+            zoom: 10,
+            center:centro,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+
+        this.mapa = mapaGeoposicionado;
+        
+        var infoWindow = new google.maps.InfoWindow;
+        if (navigator.geolocation) {
+              navigator.geolocation.getCurrentPosition(function(position) {
+                var pos = {
+                  lat: 34.8429239,
+                  lng: 136.5402045
+                };
+    
+                infoWindow.setPosition(pos);
+                infoWindow.setContent('Localización encontrada');
+                infoWindow.open(mapaGeoposicionado);
+                mapaGeoposicionado.setCenter(pos);
+              }, function() {
+                handleLocationError(true, infoWindow, mapaGeoposicionado.getCenter());
+              });
+            } else {
+              // Browser doesn't support Geolocation
+              handleLocationError(false, infoWindow, mapaGeoposicionado.getCenter());
+            }
+        }
+  
+        
+        
+        handleLocationError(browserHasGeolocation, infoWindow, pos) {
+            infoWindow.setPosition(pos);
+            infoWindow.setContent(browserHasGeolocation ?
+                                  'Error: Ha fallado la geolocalización' :
+                                  'Error: Su navegador no soporta geolocalización');
+            infoWindow.open(dynamicMap);
+      }
+
     readKML(files){
         var archivo = files[0];
-        if(archivo.type.match("text.*")){
-            var parser = new XMLSerializer();
-            var doc = parser.serializeToString(archivo);
-            console.log(doc);
-            
-            /*var xml = xmlhttp.responseXML;
-            
+        if(archivo.type.match(".kml")){
 
             var lector = new FileReader();
             lector.onload = function(evento){
                 var texto = lector.result;
-                var lineas = texto.split("\n");
-                var content = "<section> <h2>Noticias</h2>"
-                for(var i =0; i<lineas.length; i++){
-                    var valores = lineas[i].split("_");
-                    console.log(valores);
-                    var string = "<article><h3>"+valores[0] + "</h3>";
-                    string+="<p>"+valores[1]+"</p>";
-                    string+="<p>"+valores[2]+"</p></article>";
-                    content+=string;
+                var parser = new DOMParser();
+                var doc = parser.parseFromString(texto,"text/xml");
+                var puntos = $("Placemark", doc);
+                var listaRuta = new Array();
+                for(var i =0; i<puntos.length; i++){
+                    var punto = puntos[i];
+                    console.log(punto);
+                    var coordinates = $("coordinates", punto).text().split("\n")[1].split(",");
+                    console.log(coordinates);
+
+                    var latitud =  Number(coordinates[1]);
+                    var longitud =  Number(coordinates[0]);
+
+
+                    var latLong ={lat:latitud, lng:longitud};
+
+                    new google.maps.Marker({
+                        position: latLong,
+                        map: this.mapa,
+                        title: "Punto "+i,
+                      });
                     
+                      listaRuta.push({lat:latitud, lng:longitud});
+
+
                 }
-                content+="</section>";
-                $("section").html(content);
-            }
+                var flightPath = new google.maps.Polyline({
+                    path: listaRuta,
+                    geodesic: true,
+                    strokeColor: "#FF0000",
+                    strokeOpacity: 1.0,
+                    strokeWeight: 2,
+                  });
+                
+                  flightPath.setMap(this.mapa);
+            }.bind(this)
             lector.readAsText(archivo);
-            */
+            
+           
+           
         }
     }
     readSVG(files){
         var archivo = files[0];
-        if(archivo.type.match("text.*")){
-            var xmlhttp = new XMLHttpRequest();
-            xmlhttp.open("GET",archivo, false);
-            xmlhttp.send();
-            var xml = xmlhttp.responseXML;
-            
-
+        if(archivo.type.match(".svg")){
             var lector = new FileReader();
             lector.onload = function(evento){
                 var texto = lector.result;
-                var lineas = texto.split("\n");
-                var content = "<section> <h2>Noticias</h2>"
-                for(var i =0; i<lineas.length; i++){
-                    var valores = lineas[i].split("_");
-                    console.log(valores);
-                    var string = "<article><h3>"+valores[0] + "</h3>";
-                    string+="<p>"+valores[1]+"</p>";
-                    string+="<p>"+valores[2]+"</p></article>";
-                    content+=string;
-                    
-                }
-                content+="</section>";
-                $("section").html(content);
+                var parser = new DOMParser();
+                var doc = parser.parseFromString(texto, "image/svg+xml");
+                console.log(doc)
+                var svg = document.createElement("svg");
+                svg.innerHTML=texto;
+                $("main").append(svg);
             }
             lector.readAsText(archivo);
+            
         }
     }
 }

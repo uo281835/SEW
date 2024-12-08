@@ -5,8 +5,9 @@ import xml.etree.ElementTree as ET
 ##TODOS LOS TRAMOS : */tramo
 ##TODOS LOS PUNTOS : */tramo/punto
 
-nombreFichero = "circuito.xml"
+nombreFichero = "F1Desktop/xml/circuito.xml"
 nombreSalida = "circuito"
+
 
 
 def escrituraPrologo(archivo, nombre):
@@ -34,11 +35,12 @@ def escrituraEpilogo(archivo):
 
 
 
-def tramoToKML(elemento, archivo):
+def tramoToKML(elemento, archivo, numeroPunto):
   print(elemento.tag)
- 
   archivo.write("<Placemark>\n")
-  archivo.write("<name> punto </name>\n")
+  archivo.write("<name> punto ")
+  archivo.write(str(numeroPunto))
+  archivo.write("</name>\n")
   archivo.write("<Point><coordinates>\n")
   coordenadas = elemento.find('punto/coordenadas')
   print(coordenadas.tag)
@@ -86,10 +88,11 @@ def main():
   expresionXPath = "*/tramo"
 
   resultadoExpresion = raiz.findall(expresionXPath)
-
+  numeroPunto =0
   # Recorrido de los tramos
   for hijo in resultadoExpresion:
-    tramoToKML(hijo, salida)
+    tramoToKML(hijo, salida, numeroPunto)
+    numeroPunto+=1
 
   escrituraEpilogo(salida)
   salida.close()
