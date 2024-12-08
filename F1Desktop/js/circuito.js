@@ -62,6 +62,21 @@ class Circuito{
                 $(dListInfo).append(termAncho);
                 $(dListInfo).append(defAncho);
 
+                var salida = $("salida", doc);
+                var coordenadas = $("coordenadas", salida);
+                var coordenadasString = "";
+                coordenadasString+= "Latitud: "+$("latitud",coordenadas).text();
+                coordenadasString+= ", Longitud: "+$("longitud",coordenadas).text();
+                coordenadasString+= ", Altura: "+$("altura",coordenadas).text();
+                var termCoordenadas = document.createElement("dt");
+                $(termCoordenadas).text("Coordenadas de la salida");
+                var defCoordenadas = document.createElement("dd");
+                $(defCoordenadas).text(coordenadasString);
+                $(dListInfo).append(termCoordenadas);
+                $(dListInfo).append(defCoordenadas);
+
+
+
                 var Localidad = $("localidad", doc).text();
                 var termLocalidad =document.createElement("dt");
                 $(termLocalidad).text("Localidad");
@@ -175,6 +190,53 @@ class Circuito{
                 }
 
                 //Tramos y Salida
+                var sectionTramos = document.createElement("section");
+                var h4Tramos = document.createElement("h4");
+                $(h4Tramos).text("Tramos");
+                $(sectionTramos).append(h4Tramos);
+                var olTramos = document.createElement("ol");
+                $(sectionTramos).append(olTramos);
+                $(article).append(sectionTramos);
+
+                var tramos = $("tramo", doc);
+                for(var i =0; i<tramos.length; i++){
+                    var tramo = tramos[i];
+                    var item = document.createElement("li");
+                    $(olTramos).append(item);
+                    var dltramo = document.createElement("dl");
+                    $(item).append(dltramo);
+
+                    var coordenadasTramo = $("coordenadas", tramo);
+                    var coordenadasStringTramo = "";
+                    coordenadasStringTramo+= "Latitud: "+$("latitud",coordenadasTramo).text();
+                    coordenadasStringTramo+= ", Longitud: "+$("longitud",coordenadasTramo).text();
+                    coordenadasStringTramo+= ", Altura: "+$("altura",coordenadasTramo).text();
+                    var termCoordenadasT = document.createElement("dt");
+                    $(termCoordenadasT).text("Coordenadas");
+                    var defCoordenadasT = document.createElement("dd");
+                    $(defCoordenadasT).text(coordenadasStringTramo);
+                    $(dltramo).append(termCoordenadasT);
+                    $(dltramo).append(defCoordenadasT);
+
+                    var distanciaTramo = $("distancia", tramo);
+                    var stringDistancia = $(distanciaTramo).text()+" "+$(distanciaTramo).attr("unidad")
+                    var termDistancia = document.createElement("dt");
+                    $(termDistancia).text("Longitud del tramo")
+                    var defDistancia = document.createElement("dd");
+                    $(defDistancia).text(stringDistancia);
+                    $(dltramo).append(termDistancia);
+                    $(dltramo).append(defDistancia);
+
+                    var numeroSector = $("numeroSector", tramo).text();
+                    var termNumero = document.createElement("dt");
+                    $(termNumero).text("Sector");
+                    var defNumero = document.createElement("dd");
+                    $(defNumero).text(numeroSector);
+                    $(dltramo).append(termNumero);
+                    $(dltramo).append(defNumero);
+
+
+                }
 
 
                 $("main").append(article);
