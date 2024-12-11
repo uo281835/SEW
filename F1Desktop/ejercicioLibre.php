@@ -15,7 +15,7 @@
         if(session_status()===PHP_SESSION_NONE)
         session_start();
 
-        class Fichajes(){
+        class Fichajes{
             private $server;
             private $user;
             private $pass;

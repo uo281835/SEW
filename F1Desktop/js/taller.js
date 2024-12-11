@@ -1,13 +1,7 @@
 class Taller{
 
     constructor(){
-        if (!window.indexedDB) {
-            alert("Sorry! Your browser does not support IndexedDB");
-        }else{
-            var p = document.createElement("p");
-            $(p).text("Este navegador soporta IndexDB");
-            $("main").append(p)
-        }
+        
 
         if (window.File && window.FileReader && window.FileList && window.Blob) {  
             document.querySelectorAll("p")[1].innerHTML=("<p>Este navegador soporta el API File </p>");
@@ -21,6 +15,14 @@ class Taller{
         this.partesSeleccionadas.push({});
         this.partesSeleccionadas.push({});
         this.printSlots(3);
+        if (!window.indexedDB) {
+            alert("Sorry! Your browser does not support IndexedDB");
+        }else{
+            var p = document.createElement("p");
+            $(p).text("Este navegador soporta IndexDB");
+            $("main").append(p)
+            this.initData();
+        }
     }
 
     readInputFile(files){
@@ -130,18 +132,16 @@ class Taller{
     }
 
     printCoche(){
-        var request = window.indexedDB.open("Coche");
+        var request = window.indexedDB.open("Coche",2);
 
         request.onerror = function(){
             console.error("Error", request.error);
         }
 
-        request.onsuccess = function(){
-            var db = request.result;
-            if(!db.objectStoreNames.contains("partes")){
-                db.createObjectStore("partes");
-            }
-            var transaction = db.transaction("partes","readwrite");
+        request.onsuccess = function(event){
+            var db = event.target.result;
+           
+            var transaction = db.transaction(["partes"],"readwrite");
 
             var partes = transaction.objectStore("partes");
             var request2 = partes.add(this.partesSeleccionadas);
@@ -149,11 +149,128 @@ class Taller{
             request2.onsuccess = function(){
                 this.imprimirCoche();
             }.bind(this);
-            request2.error = function(){
-                console.log("Error");
+            request2.onerror = function(){
+                console.log("Error", request2.error);
             }.bind(this);
         }.bind(this);
 
+    }
+
+    initData(){
+        var request = window.indexedDB.open("Coche",2);
+
+        request.onerror = function(){
+            console.error("Error", request.error);
+        }
+        request.onsuccess = function(event){
+            var db = event.target.result;
+            var transaction = db.transaction(["partes"],"readwrite");
+
+            var partes = transaction.objectStore("partes");
+            partes.getAll().onsuccess = function(event){
+                var result = event.target.result;
+                console.log(result);
+                var cantidad = result.length;
+                if(cantidad>=1){
+                    var configuracion = result.slice(-1)[0];
+                    this.partesSeleccionadas = configuracion;
+                    for(var i =0; i<configuracion.length; i++){
+                        var parte = configuracion[i];
+                        
+                        console.log(parte);
+                        if(parte.nombre!== undefined){
+                            var articleSection = $("article")[0];
+                            var section =  $("section",articleSection)[i];
+                            $(section).empty();
+                            var h4 = document.createElement("h4");
+                            $(h4).text(parte.nombre);
+                            var p1 = document.createElement("p");
+                            $(p1).text("Velocidad:"+parte.velocidad);
+                            var p2 = document.createElement("p");
+                            $(p2).text("Freno:"+parte.freno);
+                            $(section).append(h4);
+                            $(section).append(p1);
+                            $(section).append(p2);
+                        }
+                        
+                    }
+                   
+                }
+                
+            }.bind(this)
+            
+        }.bind(this);
+
+        request.onupgradeneeded = function(event){
+            var db = event.target.result;
+            if(!db.objectStoreNames.contains("partes")){
+                db.createObjectStore("partes", {autoIncrement:true});
+            }
+            var transaction = event.target.transaction;
+
+            var partes = transaction.objectStore("partes");
+            var request2 = partes.add(this.partesSeleccionadas);
+
+            request2.onsuccess = function(){
+                partes.getAll().onsuccess = (event)=>{
+                    var result = event.target.result;
+                    console.log(result);
+                }
+            }.bind(this);
+            request2.onerror = function(){
+                console.log("Error", request2.error);
+            }.bind(this);
+        }.bind(this);
+
+    }
+
+    resetDatabase(){
+        var request = window.indexedDB.open("Coche");
+
+        request.onerror = function(){
+            console.error("Error", request.error);
+        }
+
+        request.onsuccess = function(){
+            this.resetDatabase();
+            var db = request.result;
+            var transaction = db.transaction("partes","readwrite");
+
+            var partes = transaction.objectStore("partes");
+            var comprobar = partes.get("latest");
+            comprobar.onsuccess = function(){
+                var request2 = partes.delete("latest");
+
+                request2.onsuccess = function(){
+                    console.log("Se ha reseteado todo");
+                }.bind(this);
+                request2.error = function(){
+                    console.log("Error");
+                }.bind(this);
+            }.bind(this);
+            
+        }.bind(this);
+
+    }
+    imprimirCoche(datos){
+        var request = window.indexedDB.open("Coche");
+
+        request.onerror = function(){
+            console.error("Error", request.error);
+        }
+
+        request.onsuccess = function(event){
+            var db = event.target.result;
+            var transaction = db.transaction(["partes"],"readwrite");
+
+            var partes = transaction.objectStore("partes");
+            partes.getAll().onsuccess = (event)=>{
+                var result = event.target.result;
+                console.log(result);
+            }
+            
+        }.bind(this);
+        console.log(datos);
     }
 
 
