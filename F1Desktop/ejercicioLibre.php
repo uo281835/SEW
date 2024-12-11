@@ -11,6 +11,77 @@
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
     <link rel="icon" href="multimedia/imagenes/favicon.ico"/>
+    <?php
+        if(session_status()===PHP_SESSION_NONE)
+        session_start();
+
+        class Fichajes(){
+            private $server;
+            private $user;
+            private $pass;
+            private $dbname;
+            private $db;
+
+            public function __construct(){
+                $this->server = "localhost";
+                $this->user = "DBUSER2024";
+                $this->pass = "DBPSWD2024";
+                $this->dbname = "fichajes";
+                $this->crearDB();
+            }
+
+            function crearDB(){
+                $this->db = new msqli($this->server, $this->user, $this->pass, $this->dbname);
+
+                if ($this->db->connect_errno) {
+                    echo "Error de conexión: " . $this->db->connect_error;
+                  } else {
+                    echo $this->db->host_info . "\r\n";
+                }
+            }
+
+            function setup(){
+                $this->db->query(
+                    "CREATE TABLE if not exists escuderias (
+                        NOMBRE varchar(255) NOT NULL,
+                        PAISORIGEN varchar(255) NOT NULL,
+                        PAISACTUAL varchar(255) NOT NULL,
+                        MARCAMOTOR varchar(255) NOT NULL,
+                      ) ;"
+
+                );
+                $this->db->query(
+                    "CREATE TABLE if not exists pilotos (
+                        NOMBRECOMPLETO varchar(255) NOT NULL,
+                        PAISNACIMIENTO varchar(255) NOT NULL,
+                        FECHANACIMIENTO varchar(255) NOT NULL,
+                      ) ;"
+
+                );
+                $this->db->query(
+                    "CREATE TABLE if not exists coches (
+                        MODELO varchar(255) NOT NULL,
+                        MOTOR varchar(255) NOT NULL,
+                        NEUMATICOS varchar(255) NOT NULL,
+                      ) ;"
+                );
+
+                $this->db->query(
+                    "CREATE TABLE if not exists fichado_por (
+                        PILOTO varchar(255) NOT NULL,
+                        ESCUDERIA varchar(255) NOT NULL,
+                      ) ;"
+                );
+
+                $this->db->query(
+                    "CREATE TABLE if not exists conduce (
+                        PILOTO varchar(255) NOT NULL,
+                        COCHE varchar(255) NOT NULL,
+                      ) ;"
+                );
+            }
+        }
+    ?>
 </head>
 
 <body>

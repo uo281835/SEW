@@ -1,0 +1,3 @@
+MotorMalo_10_15
+MotorMedio_40_20
+MotorBueno_100_100

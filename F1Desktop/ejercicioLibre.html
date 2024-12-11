@@ -11,6 +11,10 @@
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
     <link rel="icon" href="multimedia/imagenes/favicon.ico"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script src="/F1Desktop/js/taller.js"></script>
+
 </head>
 
 <body>
@@ -33,6 +37,10 @@
         <h2>Minijuego de creación de coches</h2>
         <!-- Datos con el contenidos que aparece en el navegador -->
         <p>En desarrollo</p>
+        <script>
+            var taller = new Taller();
+        </script>
+        <p><input type="file" onchange="taller.readInputFile(this.files);">Elija un archivo a importar</p>
     </main>
     
     
