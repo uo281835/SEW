@@ -37,7 +37,7 @@
             }
 
             function crearDB(){
-                $this->db = new msqli($this->server, $this->user, $this->pass, $this->dbname);
+                $this->db = new mysqli($this->server, $this->user, $this->pass, $this->dbname);
 
                 if ($this->db->connect_errno) {
                     echo "Error de conexión: " . $this->db->connect_error;
@@ -48,32 +48,41 @@
 
             function setup(){
                 $this->db->query(
-                    "CREATE TABLE if not exists records (
+                    "CREATE TABLE if not exists records.registro (
                         NOMBRE varchar(255) NOT NULL,
                         APELLIDOS varchar(255) NOT NULL,
-                        NIVEL number(255) NOT NULL,
-                        TIEMPO number(255) NOT NULL
+                        NIVEL FLOAT NOT NULL,
+                        TIEMPO FLOAT NOT NULL
                       ) ;"
 
                 );
             }
 
             function addRecord(){
-                $consulta = "INSERT INTO records(nombre, apellidos, nivel, tiempo) VALUES (?,?,?,?)";
+                echo "Añadiendo record";
+                $consulta = "INSERT INTO records.registro(nombre, apellidos, nivel, tiempo)
+                 VALUES (?,?,?,?)";
                 $ps = $this->db->prepare($consulta);
-                $ps->bind_param("ssnn", $_POST["nombre"],$_POST["apellidos"], $_POST["nivel"], $_POST["tiempo"]);
+                echo "Añadiendo record";
+                $nombre=$_POST["nombre"];
+                $apellidos=$_POST["apellidos"];
+                $nivel=$_POST["nivel"];
+                $tiempo=$_POST["tiempo"];
+                $ps->bind_param("ssdd", $nombre,
+                $apellidos, 
+                $nivel, 
+                $tiempo);
                 $ps->execute();
             }
 
             function getRecords(){
-                $consulta = "SELECT * FROM records LIMIT ?";
+                $consulta = "SELECT * FROM records.registro LIMIT 10";
                 $ps = $this->db->prepare($consulta);
-                $ps->bind_param("n", 10);
                 $ps->execute();
                 $resultado = $ps->get_result();
                 $toPrint = "<section> <h3>Resultados</h3><ol>";
                 while($row = $resultado->fetch_assoc()){
-                    $toPrint .= "<li><p> Nombre " . $row['NOMBRE'] . " - Apellidos: " . $row['Apellidos'] . " - Tiempo: " . $row['Tiempo']. "</p></li>";
+                    $toPrint .= "<li><p> Nombre " . $row['nombre'] . " - Apellidos: " . $row['apellidos'] . " - Tiempo: " . $row['tiempo']. "</p></li>";
                 }                
                 $toPrint .= "</ol></section>";
 
@@ -113,7 +122,7 @@
             $_SESSION['record']->setup();
 
             if(count($_POST)>0){
-                if(isset($_POST["record"])){
+                if(isset($_POST["nombre"])){
                     $_SESSION['record']->addRecord();
                     $_SESSION['record']->getRecords();
                 }
