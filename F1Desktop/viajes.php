@@ -14,7 +14,7 @@
 
     <link rel="icon" href="multimedia/imagenes/favicon.ico"/>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="/F1Desktop/js/viajes.js"></script>
+    <script src="js/viajes.js"></script>
    
 
     <?php 
@@ -81,7 +81,7 @@
             }
 
             public function getConversion(){
-                $req_url = 'https://v6.exchangerate-api.com/v6/APIKEY/latest/'.$this->monedaLocal;
+                $req_url = 'https://v6.exchangerate-api.com/v6/666b793aee1fbfb7e66bd140/latest/'.$this->monedaLocal;
                 $response_json = file_get_contents($req_url);
                 
                 // Continuing if we got a result
@@ -145,15 +145,19 @@
         <article>
             <h3>Carrousel</h3>
             <?php 
-                $carrousel = new Carrousel("tokio","japon");
+                $carrousel = new Carrusel("tokio","japon");
                 $carrousel->crearCarrusel(10);
-
-                $moneda = new Moneda("JPY","EUR");
-                $moneda->getConversion()
             ?>
             <script>
                 viajes.inicializarCarrousel();
             </script>
+        </article>
+        <article>
+            <h3>Monedas</h3>
+            <?php 
+                $moneda = new Moneda("JPY","EUR");
+                $moneda->getConversion();
+            ?>
         </article>
     </main>
 
