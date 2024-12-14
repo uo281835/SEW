@@ -25,7 +25,7 @@ class Semaforo{
         botonArrancar.addEventListener("click", this.initSequence.bind(game));
         document.querySelector("main").appendChild(botonArrancar);
         var botonReaccion= document.createElement("button");
-        botonReaccion.setAttribute("disabled","true");
+        botonReaccion.setAttribute("disabled","");
         botonReaccion.textContent = "Reacción";
         botonReaccion.addEventListener("click", this.stopReaction.bind(game));
         document.querySelector("main").appendChild(botonReaccion);
@@ -35,7 +35,7 @@ class Semaforo{
 
     initSequence(){
         document.querySelector("main").classList.add("load");
-        document.querySelectorAll("button")[0].setAttribute("disabled","true");
+        document.querySelectorAll("button")[0].setAttribute("disabled","");
 
         console.log(this)
         var f = function(game){
@@ -59,7 +59,7 @@ class Semaforo{
         
         document.querySelector("main p").innerHTML= (diferencia+"ms");
         document.querySelector("main").classList.remove("load","unload");
-        document.querySelectorAll("button")[1].setAttribute("disabled","true");
+        document.querySelectorAll("button")[1].setAttribute("disabled","");
         document.querySelectorAll("button")[0].removeAttribute("disabled");
         this.createRecordForm();
     }

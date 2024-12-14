@@ -91,11 +91,18 @@ class Viajes{
                   lat: position.coords.latitude,
                   lng: position.coords.longitude
                 };
+
+
     
                 infoWindow.setPosition(pos);
                 infoWindow.setContent('Localización encontrada');
                 infoWindow.open(mapaGeoposicionado);
+
+                var h31 = document.createElement("h4");
+                $(h31).text("Mapa del circuito ");
+                $("main article")[0].append(h31);
                 mapaGeoposicionado.setCenter(pos);
+                
               }, function() {
                 this.handleLocationError(true, infoWindow, mapaGeoposicionado.getCenter());
               });

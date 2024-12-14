@@ -136,8 +136,9 @@
     <p>En desarrollo</p>
     <main>
         <h3>Mapa</h3>
-        <article id="mapa">
+        <article>
             <p>aaa</p>
+            <h4>Mapa dinámico</h4>
             <div ></div>
         </article>
         <script>
