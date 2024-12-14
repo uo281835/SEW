@@ -10,7 +10,10 @@ class Agenda{
             url: this.url,
             method: 'GET',
             success: function(data1){
-                $("section").empty()
+                $("section").empty();
+                var h31 = document.createElement("h3");
+                $(h31).text("Carreras de esta temporada");
+                $("section").append(h31);
                 var races = (data1.MRData.RaceTable.Races)
                 for(var i=0; i<races.length; i++){
                     var race = races[i];
@@ -30,11 +33,11 @@ class Agenda{
                     //PINTADO
                     var article = document.createElement("article");
 
-                    var h3 = document.createElement("h3");
+                    var h3 = document.createElement("h4");
                     $(h3).text(raceName);
                     $(article).append(h3);
 
-                    var h4 = document.createElement("h4");
+                    var h4 = document.createElement("h5");
                     $(h4).text(circuitName);
                     $(article).append(h4);
 
