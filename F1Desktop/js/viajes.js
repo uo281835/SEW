@@ -97,11 +97,11 @@ class Viajes{
                 infoWindow.open(mapaGeoposicionado);
                 mapaGeoposicionado.setCenter(pos);
               }, function() {
-                handleLocationError(true, infoWindow, mapaGeoposicionado.getCenter());
+                this.handleLocationError(true, infoWindow, mapaGeoposicionado.getCenter());
               });
             } else {
               // Browser doesn't support Geolocation
-              handleLocationError(false, infoWindow, mapaGeoposicionado.getCenter());
+              this.handleLocationError(false, infoWindow, mapaGeoposicionado.getCenter());
             }
         }
   

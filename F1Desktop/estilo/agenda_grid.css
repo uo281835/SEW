@@ -1,32 +1,68 @@
+/*0,0,2*/
 main section{
+    /*Advertencia de redefinición por media query*/
     display: grid;
+    /*Advertencia de redefinición por media query*/
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
+    /*Advertencia de redefinición por media query*/
+    grid-gap: 3em;
+    /*Advertencia de redefinición por media query*/
+    grid-auto-rows: minmax(10em, auto);
 }
+
+@media screen and (max-width: 675px){
+    /*0,0,2*/
+    main section{
+        /*Advertencia de redefinición por media query*/
+        display: grid;
+        /*Advertencia de redefinición por media query*/
+        grid-template-columns: repeat(2, 1fr);
+        /*Advertencia de redefinición por media query*/
+        grid-gap: 3em;
+        /*Advertencia de redefinición por media query*/
+        grid-auto-rows: minmax(10em, auto);
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+    /*0,0,2*/
+    main section{
+        /*Advertencia de redefinición por media query*/
+        display: grid;
+        /*Advertencia de redefinición por media query*/
+        grid-template-columns: repeat(1, 1fr);
+        /*Advertencia de redefinición por media query*/
+        grid-gap: 3em;
+        /*Advertencia de redefinición por media query*/
+        grid-auto-rows: minmax(10em, auto);
+    }
+    
+}
+/*0,0,3*/
 body section article{
     border: solid;
     border: darkblue;
     height: 90%;
     width: 60%;
     background: white;
+    color:darkblue;
     border-radius: 1em;
     padding: 0.5em;
     margin-top: 1em;
     
 }
-
+/*0,0,4*/
 body section article p{
     border: solid;
+    /*Advertencia: hereda el color de  body main section article*/
     border: darkblue;
     background: white;
 }
-
+/*0,0,4*/
 body section article h3{
-    border: solid;
-    border: darkblue;
     background: darkblue;
-color: white;
-border-radius: 1em;
-padding: 1em;
+    color: white;
+    border-radius: 1em;
+    padding: 1em;
 }

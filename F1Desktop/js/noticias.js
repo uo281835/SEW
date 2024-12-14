@@ -1,10 +1,10 @@
 class Noticias{
     constructor(){
         if (window.File && window.FileReader && window.FileList && window.Blob) {  
-            document.querySelectorAll("p")[1].innerHTML=("<p>Este navegador soporta el API File </p>");
+            document.querySelectorAll("main p")[0].innerHTML=("<p>Este navegador soporta el API File </p>");
         }
         else {
-            document.querySelectorAll("p")[1].innerHTML=("<p>¡¡¡ Este navegador NO soporta el API File y este programa puede no funcionar correctamente !!!</p>");
+            document.querySelectorAll("main p")[0].innerHTML=("<p>¡¡¡ Este navegador NO soporta el API File y este programa puede no funcionar correctamente !!!</p>");
         }
     }
 

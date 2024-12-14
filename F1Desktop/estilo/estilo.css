@@ -40,6 +40,7 @@ body header h1 a{
 
 /*0 0 4*/
 body header h1 a:visited{
+    /*hereda el background color de header*/
     color: #ffffff;
     text-decoration: none;
 }
@@ -96,6 +97,7 @@ body p{
 }
 /* 0 0 3*/
 main section a{
+    /*Hereda el background color de section*/
     color: #041f60; 
 }
 /* 0 1 2 */
@@ -105,10 +107,12 @@ header a.active{
 
 /*0 1 3*/
 main section a:hover{
+        /*Hereda el background color de section*/
     color: #000;
 }
 /*0 1 3*/
 main section a:visited{
+        /*Hereda el background color de section*/
     color: #041f60;
 }
 /* 0 0 3*/
@@ -141,25 +145,21 @@ aside  dl dt {
 /*0 0 1*/
 table{
     table-layout: auto;
+        /*Hereda el  color de body*/
     background-color: #ffffff;
     border-collapse: collapse;
     
 }
 
+/*0,0,1*/
 td{
     border: 3px solid #000;
 }
+/*0,0,1*/
 th{
     border: 3px solid #000;
 }
-article{
-    width: 30em;
-    height: 30em;
-}
-main article>div{
-    width: 100%;
-    height: 100%;
-}
+/*0,0,1*/
 svg{
     width: 100%;
     height: 100%;

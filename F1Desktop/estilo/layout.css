@@ -1,24 +1,38 @@
 /* Juan Gómez Tejeda UO281835 */
 
+/*0,0,1*/
 header{
     display: flex;
 }
 
 @media screen and (max-width: 675px){
+    /*0,0,1*/
     header{
         /*Advertencia de redefinición por media query*/
         display: flex;
         flex-direction: column;
     }
+    /*0,0,2*/
     header nav{
         /*Advertencia de redefinición por media query*/
         display: flex;
         flex-direction: column;
     }
+    /*0,0,2*/
     body p{
         display: none;
     }
+/*0,0,3*/
+    body main p{
+        display: block;
+    }
+    /*0,0,3*/
+    body footer p{
+        display: block;
+    }
+    
 }
+/*0,0,2*/
 header nav{
     display: flex;
 }

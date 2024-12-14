@@ -1,21 +1,28 @@
+/*0,0,3*/
 main section article{
     background-color: aliceblue;
     border-radius: 1em;
     color: black;
     display: flex;
     flex-direction: column;
-    width: 21em;
+    width: 80%;
     height: auto;
+    margin-bottom: 1em;
 }
 
+/*0,0,4*/
 main section article p{
     background-color: aliceblue;
+    color: darkblue;
 }
+/*0,0,4*/
 
-article h3{
+main section article h3{
+    background-color: azure;
     font-size: 1em;
     color: darkblue;
 }
+/*0,0,3*/
 
 main article img{
     width: 3em;
