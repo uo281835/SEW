@@ -5,7 +5,7 @@ class Fondo{
         this.circuito = nombreCircuito;
     }
     obtenerImagenes(){
-        var linkQuery = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+        var linkQuery = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
         $.getJSON(linkQuery, 
             {
                 tags: this.circuito+", F1, formula1",

@@ -10,7 +10,7 @@ class Pais{
         this.codigoPais = "&JP";
         this.unidades = "&units=metric";
         this.idioma = "&lang=es";
-        this.url = "http://api.openweathermap.org/data/2.5/forecast?lat=" + this.lat + "&lon=" + this.lon+"&mode=xml&appid=" + this.apikey;
+        this.url = "https://api.openweathermap.org/data/2.5/forecast?lat=" + this.lat + "&lon=" + this.lon+"&mode=xml&appid=" + this.apikey;
         this.correcto = "¡Todo correcto! Datos recibidos de <a href='http://openweathermap.org'>OpenWeatherMap</a>"  
     }
 
