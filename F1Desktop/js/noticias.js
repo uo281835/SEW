@@ -1,10 +1,10 @@
 class Noticias{
     constructor(){
         if (window.File && window.FileReader && window.FileList && window.Blob) {  
-            document.querySelectorAll("main p")[0].innerHTML=("<p>Este navegador soporta el API File </p>");
+            document.querySelectorAll("main p")[0].innerHTML=("Este navegador soporta el API File");
         }
         else {
-            document.querySelectorAll("main p")[0].innerHTML=("<p>¡¡¡ Este navegador NO soporta el API File y este programa puede no funcionar correctamente !!!</p>");
+            document.querySelectorAll("main p")[0].innerHTML=("¡¡¡ Este navegador NO soporta el API File y este programa puede no funcionar correctamente !!!");
         }
     }
 
@@ -15,7 +15,7 @@ class Noticias{
             lector.onload = function(evento){
                 var texto = lector.result;
                 var lineas = texto.split("\n");
-                var content = "<section> <h2>Noticias</h2>"
+                var content = " <h2>Noticias</h2>"
                 for(var i =0; i<lineas.length; i++){
                     var valores = lineas[i].split("_");
                     console.log(valores);
@@ -25,7 +25,6 @@ class Noticias{
                     content+=string;
                     
                 }
-                content+="</section>";
                 $("section").html(content);
             }
             lector.readAsText(archivo);
