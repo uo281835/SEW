@@ -30,17 +30,17 @@ class Pais{
     }
 
     getInfoSecundaria(){
-        var result = "<ul>";
+        var result = "";
         result+="<li>"+this.circuito+"</li>";
         result+="<li>"+this.poblacion+"</li>";
         result+="<li>"+this.formaGobierno+"</li>";
         result+="<li>"+this.religionMayoritaria+"</li>";
-        result+="</ul>";
+        result+="";
         return result;
     }
 
     escribirCoordenadas(){
-        document.querySelector("body main p").innerHTML = ("<p> Coordenadas de la línea de meta "+this.lineaMeta+"</p>");
+        document.querySelector("body main p").innerHTML = ("Coordenadas de la línea de meta "+this.lineaMeta);
     }
     obtenerDatos(ciudad){
         this.ciudad = ciudad;

@@ -38,8 +38,8 @@
     <!-- Datos con el contenidos que aparece en el navegador -->
     <main>
         <section>
-        <h3></h3>
-        <h4></h4>
+        <h3>Pais</h3>
+        <h4>Capital</h4>
        <ul>
 
        </ul>
@@ -51,8 +51,8 @@
 
             console.log(document.querySelector("body"))
             //document.querySelector("body main").write("<section>");
-            document.querySelector("body main h3").innerHTML = ("<h3>"+pais.getNombre()+"</h3>");
-            document.querySelector("body main h4").innerHTML=("<h4>"+pais.getCapital()+"</h4>");
+            document.querySelector("body main h3").innerHTML = (pais.getNombre());
+            document.querySelector("body main h4").innerHTML=(pais.getCapital());
             document.querySelector("body main ul").innerHTML = (pais.getInfoSecundaria());
             pais.escribirCoordenadas();
         </script>
