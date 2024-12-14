@@ -260,9 +260,11 @@ class Circuito{
             mapTypeId: google.maps.MapTypeId.ROADMAP
         });
 
+       
         this.mapa = mapaGeoposicionado;
         
         var infoWindow = new google.maps.InfoWindow;
+        
         if (navigator.geolocation) {
               navigator.geolocation.getCurrentPosition(function(position) {
                 var pos = {
@@ -274,6 +276,10 @@ class Circuito{
                 infoWindow.setContent('Localización encontrada');
                 infoWindow.open(mapaGeoposicionado);
                 mapaGeoposicionado.setCenter(pos);
+                var h3 = document.createElement("h3");
+                $(h3).text("Mapa del circuito ");
+                $("article").append(h3);
+                
               }, function() {
                 handleLocationError(true, infoWindow, mapaGeoposicionado.getCenter());
               });
