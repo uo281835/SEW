@@ -15,11 +15,11 @@ class Noticias{
             lector.onload = function(evento){
                 var texto = lector.result;
                 var lineas = texto.split("\n");
-                var content = " <h2>Noticias</h2>"
+                var content = " <h3>Noticias</h3>"
                 for(var i =0; i<lineas.length; i++){
                     var valores = lineas[i].split("_");
                     console.log(valores);
-                    var string = "<article><h3>"+valores[0] + "</h3>";
+                    var string = "<article><h4>"+valores[0] + "</h4>";
                     string+="<p>"+valores[1]+"</p>";
                     string+="<p>"+valores[2]+"</p></article>";
                     content+=string;
