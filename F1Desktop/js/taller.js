@@ -4,10 +4,10 @@ class Taller{
         
 
         if (window.File && window.FileReader && window.FileList && window.Blob) {  
-            document.querySelectorAll("p")[1].innerHTML=("<p>Este navegador soporta el API File </p>");
+            document.querySelectorAll("p")[1].innerHTML=("Este navegador soporta el API File");
         }
         else {
-            document.querySelectorAll("p")[1].innerHTML=("<p>¡¡¡ Este navegador NO soporta el API File y este programa puede no funcionar correctamente !!!</p>");
+            document.querySelectorAll("p")[1].innerHTML=("¡¡¡ Este navegador NO soporta el API File y este programa puede no funcionar correctamente !!!");
         }
         this.partes = new Array();
         this.partesSeleccionadas = new Array();
