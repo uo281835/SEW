@@ -85,8 +85,4 @@ main.unload div{
 form{
     width: 100%;
 }
-/*0,0,1*/
-label{
-    /*Hereda el background color de body*/
-    color: white;
-}
+

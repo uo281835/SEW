@@ -45,9 +45,13 @@
             var circuito = new Circuito();
 
         </script>
-        <p><input type="file" onchange="circuito.readXML(this.files);" >XML</p>
-        <p><input type="file" onchange="circuito.readKML(this.files);" >KML</p>
-        <p><input type="file" onchange="circuito.readSVG(this.files);" >SVG</p>
+        <ul>
+            <li><label><input type="file" onchange="circuito.readXML(this.files);" >XML</label></li>
+            <li><label><input type="file" onchange="circuito.readKML(this.files);" >KML</label></li>
+            <li><label><input type="file" onchange="circuito.readSVG(this.files);" >SVG</label></li>
+        </ul>
+       
+        
     </main>
 
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU&callback=circuito.showDynamicMap" ></script>
