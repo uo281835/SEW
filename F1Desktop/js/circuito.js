@@ -252,7 +252,7 @@ class Circuito{
     showDynamicMap(){
         var centro = {lat:34.8429239, lng:136.5402045}
         console.log(centro)
-        var mapaGeoposicionado = new google.maps.Map(document.querySelector('article'),{
+        var mapaGeoposicionado = new google.maps.Map(document.querySelector('body div'),{
             zoom: 10,
             center:centro,
             mapTypeId: google.maps.MapTypeId.ROADMAP

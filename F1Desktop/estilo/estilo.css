@@ -168,5 +168,14 @@ svg{
 label{
     background-color: white;
 }
-
+/*0,0,3*/
+body>main>div{
+    width: 30em;
+    height: 30em;
+}
+/*0,0,4*/
+body main div> div{
+    width: auto;
+    height: auto;
+}
 

@@ -78,7 +78,7 @@ class Viajes{
         console.log(this)
         var centro = {lat:0, lng:0}
         console.log(centro)
-        var mapaGeoposicionado = new google.maps.Map(document.querySelector('article'),{
+        var mapaGeoposicionado = new google.maps.Map(document.querySelector('body div'),{
             zoom: 10,
             center:centro,
             mapTypeId: google.maps.MapTypeId.ROADMAP
