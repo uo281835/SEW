@@ -136,6 +136,14 @@
     <p>En desarrollo</p>
     <main>
         <h3>Mapa</h3>
+        <label>
+            <input type="button" value="Obtener mapa estatico" onclick="viajes.showMap();">
+            Obtener mapa dinamico
+        </label>
+        <label>
+            <input type="button" value="Obtener mapa dinamico" onclick="viajes.showDynamicMap();">
+            Obtener mapa dinamico
+        </label>
         <article>
             <p>aaa</p>
             <h4>Mapa dinámico</h4>
@@ -163,7 +171,7 @@
         </article>
     </main>
 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU&callback=viajes.showDynamicMap" ></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU" ></script>
 
     <footer>
         <p>En desarrollo</p>
