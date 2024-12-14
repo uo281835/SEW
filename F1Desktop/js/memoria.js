@@ -57,7 +57,7 @@ class Memoria{
         for (var i =0; i<this.elements.length; i++){
             var card = this.elements[i];
             var article = document.createElement("article")
-            article.setAttribute("data_element",card.element);
+            article.setAttribute("data-element",card.element);
             
             var h3 = document.createElement("h3");
             h3.textContent= "Tarjeta de memoria";
@@ -72,7 +72,7 @@ class Memoria{
     }
 
     addEventListeners(){
-        var cartas = document.querySelectorAll("article[data_element]")
+        var cartas = document.querySelectorAll("article[data-element]")
         for (var i =0; i<cartas.length; i++){
             var card = cartas[i];
             card.addEventListener("click",this.flipCard.bind(card,this));
@@ -148,8 +148,8 @@ class Memoria{
 
     checkForMatch(){
         if(this.firstCard!=null && this.secondCard!=null){
-            var val1 = this.firstCard.getAttribute("data_element");
-            var val2 = this.secondCard.getAttribute("data_element");
+            var val1 = this.firstCard.getAttribute("data-element");
+            var val2 = this.secondCard.getAttribute("data-element");
             if (val1 == val2){
                 this.disableCards();
             } else{
