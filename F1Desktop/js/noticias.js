@@ -15,20 +15,41 @@ class Noticias{
             lector.onload = function(evento){
                 var texto = lector.result;
                 var lineas = texto.split("\n");
-                var content = " <h3>Noticias</h3>"
                 for(var i =0; i<lineas.length; i++){
                     var valores = lineas[i].split("_");
                     console.log(valores);
-                    var string = "<article><h4>"+valores[0] + "</h4>";
-                    string+="<p>"+valores[1]+"</p>";
-                    string+="<p>"+valores[2]+"</p></article>";
-                    content+=string;
-                    
+                    this.addNoticiaArticle(valores[0],valores[1], valores[2]);
                 }
-                $("section").html(content);
-            }
+            }.bind(this);
             lector.readAsText(archivo);
         }
+    }
+    addNoticia(){
+        var titular = $("[name = 'titular']").val();
+        var contenido = $("[name = 'contenido']").val();
+        var autor = $("[name = 'autor']").val();
+        this.addNoticiaArticle(titular,contenido,autor);
+    }
+
+    addNoticiaArticle(titular, contenido, autor){
+        if(titular!==null && contenido!==null && autor!=null
+            && titular!=undefined && contenido!=undefined && autor!=undefined
+        ){
+            if(titular !== ""&& contenido!=="" && autor!==""){
+                var article = document.createElement("article");
+        var h4 = document.createElement("h4");
+        $(h4).text(titular);
+        var p1 = document.createElement("p");
+        $(p1).text(contenido);
+        var p2 = document.createElement("p");
+        $(p2).text(autor);
+        $(article).append(h4);
+        $(article).append(p1);
+        $(article).append(p2);
+        $("section")[1].append(article);
+            }
+        }
+        
     }
 
 }

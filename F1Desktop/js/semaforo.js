@@ -53,11 +53,14 @@ class Semaforo{
 
     stopReaction(){
         this.clic_moment=new Date();
-        var diferencia = -this.unload_moment.getMilliseconds()+this.clic_moment.getMilliseconds();
+
+        var milisegundosUnload = this.unload_moment.getTime();
+        var milisegundosActual = this.clic_moment.getTime();
+        var diferencia = (milisegundosActual-milisegundosUnload)/1000;
         var p = document.createElement("p");
-        p.textContent = diferencia+"ms";
+        p.textContent = diferencia+"s";
         
-        document.querySelector("main p").innerHTML= (diferencia+"ms");
+        document.querySelector("main p").innerHTML= (diferencia+"s");
         document.querySelector("main").classList.remove("load","unload");
         document.querySelectorAll("button")[1].setAttribute("disabled","");
         document.querySelectorAll("button")[0].removeAttribute("disabled");

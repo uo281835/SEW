@@ -38,6 +38,27 @@
     <main>
         
         <p></p>
+        <section>
+            <h3>Introduzca su propia noticia</h3>
+            <form>
+                <label>
+                    <input type="text" name="titular" />
+                    Titular
+                </label>
+                <label>
+                    <input type="text" name="contenido" />
+                    Contenido
+                </label><label>
+                    <input type="text" name="autor" />
+                    Autor
+                </label>
+            <label>
+                <input type="button" name="autor" onclick="noticias.addNoticia();" value="Añadir"/>
+                Añadir noticia
+            </label>
+            </form>
+        </section>
+        
         <script>
             var noticias = new Noticias();
         </script>
@@ -45,6 +66,7 @@
         <section>
             <h3>Noticias leídas</h3>
         </section>
+        
     </main>
 
     <footer>
