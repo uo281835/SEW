@@ -42,7 +42,6 @@
                 if ($this->db->connect_errno) {
                     echo "Error de conexión: " . $this->db->connect_error;
                   } else {
-                    echo $this->db->host_info . "\r\n";
                 }
             }
 
@@ -59,11 +58,9 @@
             }
 
             function addRecord(){
-                echo "Añadiendo record";
                 $consulta = "INSERT INTO records.registro(nombre, apellidos, nivel, tiempo)
                  VALUES (?,?,?,?)";
                 $ps = $this->db->prepare($consulta);
-                echo "Añadiendo record";
                 $nombre=$_POST["nombre"];
                 $apellidos=$_POST["apellidos"];
                 $nivel=$_POST["nivel"];
@@ -76,7 +73,7 @@
             }
 
             function getRecords(){
-                $consulta = "SELECT * FROM records.registro LIMIT 10";
+                $consulta = "SELECT * FROM records.registro order by tiempo LIMIT 10";
                 $ps = $this->db->prepare($consulta);
                 $ps->execute();
                 $resultado = $ps->get_result();
