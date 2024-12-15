@@ -389,7 +389,7 @@ if(isset($_POST["exportar"])){
             <h3>Manejo de datos</h3>
             <form method="post" action="#" name="inicializar">
                 <label>
-                    <input type="submit" name="inicializar">
+                    <input type="submit" name="inicializar" value="Crear Base de Datos">
                     Crear base de datos y tablas
                 </label>
             </form>
@@ -399,7 +399,7 @@ if(isset($_POST["exportar"])){
                     Fichero a cargar
                 </label>
                 <label>
-                    <input type="submit" name="cargar">
+                    <input type="submit" name="cargar" value="Cargar">
                     Cargar
                 </label>
             </form>
@@ -409,7 +409,7 @@ if(isset($_POST["exportar"])){
                     Nombre del fichero
                 </label>
                 <label>
-                    <input type="submit" name="exportar">
+                    <input type="submit" name="exportar"value="Exportar">
                     Exportar
                 </label>
             </form>
@@ -435,7 +435,7 @@ if(isset($_POST["exportar"])){
                     Nombre de la escudería
                 </label>
                 <label>
-                    <input type="submit" name="fichar">
+                    <input type="submit" name="fichar"value="Fichar">
                     Fichar
                 </label>
             </form>
@@ -461,7 +461,7 @@ if(isset($_POST["exportar"])){
                     Nombre del coche
                 </label>
                 <label>
-                    <input type="submit" name="asignar">
+                    <input type="submit" name="asignar" value="Asignar">
                     Asignar coche
                 </label>
             </form>
