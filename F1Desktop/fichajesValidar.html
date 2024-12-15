@@ -22,7 +22,7 @@
             <a href="noticias.html">Noticias</a>
             <a href="calendario.html">Calendario</a>
             <a href="meteorologia.html">Meteorología</a>
-            <a href="circuito.html">Cicuito</a>
+            <a href="circuito.html">Circuito</a>
             <a href="viajes.html">Viajes</a>
             <a href="juegos.html" class="active">Juegos</a>
         </nav>
@@ -34,28 +34,28 @@
         <article>
             <h3>Manejo de datos</h3>
             <form method="post" action="#" name="inicializar">
-                <label>
-                    <input type="submit" name="inicializar" value="Crear Base de Datos">
+                <label for="crearDB">
+                    <input id="crearDB" type="submit" name="inicializar" value="Crear Base de Datos">
                     Crear base de datos y tablas
                 </label>
             </form>
             <form enctype="multipart/form-data" method="post" action="#" name="cargar">
-                <label>
-                    <input type="file" name="ficheroCargar" title="ficheroCargar"> 
+                <label for="csvCargar">
+                    <input id="csvCargar" type="file" name="ficheroCargar" title="ficheroCargar"> 
                     Fichero a cargar
                 </label>
-                <label>
-                    <input type="submit" name="cargar" value="Cargar">
+                <label for="submitCargarCSV">
+                    <input id="submitCargarCSV" type="submit" name="cargar" value="Cargar">
                     Cargar
                 </label>
             </form>
             <form method="post" action="#" name="exportarDatos">
-                <label>
-                    <input type="text" name="ficheroExportar" title="ficheroExportar"> 
+                <label for="nombreFicheroExportar">
+                    <input id="nombreFicheroExportar" type="text" name="ficheroExportar" title="ficheroExportar"> 
                     Nombre del fichero
                 </label>
-                <label>
-                    <input type="submit" name="exportar" value="Exportar">
+                <label for="submitExportar">
+                    <input id="submitExportar" type="submit" name="exportar" value="Exportar">
                     Exportar
                 </label>
             </form>
@@ -63,16 +63,16 @@
                 <article>
             <h3>Formulario de fichaje</h3>
             <form method="post" action="#" name="fichar">
-                <label>
-                    <input type="text" name="pilotofichar" title="pilotofichar"> 
+                <label for="pilotoFichar">
+                    <input id="pilotoFichar" type="text" name="pilotofichar" title="pilotofichar"> 
                     Nombre del piloto
                 </label>
-                <label>
-                    <input type="text" name="escuderiafichar" title="escuderiafichar"> 
+                <label for="escuderiaFichar">
+                    <input id="escuderiaFichar" type="text" name="escuderiafichar" title="escuderiafichar"> 
                     Nombre de la escudería
                 </label>
-                <label>
-                    <input type="submit" name="fichar" value="Fichar">
+                <label for="submitFichar">
+                    <input id="submitFichar" type="submit" name="fichar" value="Fichar">
                     Fichar
                 </label>
             </form>
@@ -82,16 +82,16 @@
         <article>
             <h3>Formulario de asignación a coche</h3>
             <form method="post" action="#" name="asignar">
-                <label>
-                    <input type="text" name="pilotoasignar" title="pilotoasignar"> 
+                <label for="nombrePiloto">
+                    <input id="nombrePiloto" type="text" name="pilotoasignar" title="pilotoasignar"> 
                     Nombre del piloto
                 </label>
-                <label>
-                    <input type="text" name="cocheasignar" title="cocheasignar"> 
+                <label for="cocheAsignar">
+                    <input id="cocheAsignar" type="text" name="cocheasignar" title="cocheasignar"> 
                     Nombre del coche
                 </label>
-                <label>
-                    <input type="submit" name="asignar" value="Asignar">
+                <label for="submitAsignar">
+                    <input id="submitAsignar" type="submit" name="asignar" value="Asignar">
                     Asignar coche
                 </label>
             </form>

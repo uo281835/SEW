@@ -100,7 +100,7 @@
             <a href="noticias.html">Noticias</a>
             <a href="calendario.html">Calendario</a>
             <a href="meteorologia.html">Meteorología</a>
-            <a href="circuito.html">Cicuito</a>
+            <a href="circuito.html">Circuito</a>
             <a href="viajes.php">Viajes</a>
             <a href="juegos.html"  class="active">Juegos</a>
         </nav>

@@ -38,8 +38,8 @@
         <h2>Circuito - Suzuka (Suzuka, Japón)</h2>
         <!-- Datos con el contenidos que aparece en el navegador -->
         <p>En desarrollo</p>
-        <label>
-            <input type="button" value="Obtener mapa dinamico" onclick="circuito.showDynamicMap();">
+        <label for="mapaDinamico">
+            <input id="mapaDinamico" type="button" value="Obtener mapa dinamico" onclick="circuito.showDynamicMap();">
             Obtener mapa dinamico
         </label>
             <div></div>
@@ -48,9 +48,9 @@
 
         </script>
         <ul>
-            <li><label><input type="file" onchange="circuito.readXML(this.files);" >XML</label></li>
-            <li><label><input type="file" onchange="circuito.readKML(this.files);" >KML</label></li>
-            <li><label><input type="file" onchange="circuito.readSVG(this.files);" >SVG</label></li>
+            <li><label for="xml"><input id="xml" type="file" onchange="circuito.readXML(this.files);" >XML</label></li>
+            <li><label for="kml"><input id="kml" type="file" onchange="circuito.readKML(this.files);" >KML</label></li>
+            <li><label for="svg"><input id="svg" type="file" onchange="circuito.readSVG(this.files);" >SVG</label></li>
         </ul>
        
         

@@ -66,7 +66,8 @@
         <script>
             var noticias = new Noticias();
         </script>
-        <label><input type="file" onchange="noticias.readInputFile(this.files);"> Introduzca el fichero de noticias</label>
+        <label for="subirFichero">
+            <input id="subirFichero" type="file" onchange="noticias.readInputFile(this.files);"> Introduzca el fichero de noticias</label>
         <section>
             <h3>Noticias leídas</h3>
         </section>
