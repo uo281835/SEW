@@ -10,7 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
-    <link rel="stylesheet" type="text/css" href="estilo/carrusel.css" />
 
     <link rel="icon" href="multimedia/imagenes/favicon.ico"/>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -151,16 +150,24 @@
         <script>
             var viajes = new Viajes();
         </script>
-        <article>
+        <section>
             <h3>Carrousel</h3>
-            <?php 
+            <article>
+                <h4>Imágenes del carrousel</h4>
+                <section>
+                    <h5>Pulse los dos botones para cambiar de foto</h5>
+                <?php 
                 $carrousel = new Carrusel("tokio","japon");
                 $carrousel->crearCarrusel(10);
             ?>
+                </section>
+                
+            </article>
+           
             <script>
                 viajes.inicializarCarrousel();
             </script>
-        </article>
+        </section>
         <article>
             <h3>Monedas</h3>
             <?php 

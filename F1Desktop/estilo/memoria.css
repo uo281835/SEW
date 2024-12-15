@@ -7,6 +7,7 @@ body main section{
     display: flex;
     flex-wrap: wrap;
     background-color: darkblue;
+    color: black;
 }
 
 body main section h2{
