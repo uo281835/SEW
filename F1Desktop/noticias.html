@@ -41,23 +41,23 @@
         <section>
             <h3>Introduzca su propia noticia</h3>
             <form>
-                <label>
+                <label for="titular">
                     Titular
-                    <input type="text" name="titular" />
+                    <input id="titular"type="text" name="titular" />
                     
                 </label>
-                <label>
+                <label for="contenido">
                     Contenido
-                    <input type="text" name="contenido" />
+                    <input id="contenido"type="text" name="contenido" />
                     
-                </label><label>
+                </label><label for="autor">
                     Autor
-                    <input type="text" name="autor" />
+                    <input id="autor" type="text" name="autor" />
                     
                 </label>
-            <label>
+            <label for="add">
                 Añadir noticia
-                <input type="button" name="autor" onclick="noticias.addNoticia();" value="Añadir"/>
+                <input id="add"type="button" name="autor" onclick="noticias.addNoticia();" value="Añadir"/>
                 
             </label>
             </form>

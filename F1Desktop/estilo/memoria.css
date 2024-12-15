@@ -37,7 +37,7 @@ article[data-state="revealed"] {
 /*0,0,3*/
 main article h3,
 /*0,0,3*/
-main article img {
+body main article img {
     margin: 0em;
     width: 100%;
     height: 100%;
