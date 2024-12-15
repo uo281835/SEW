@@ -1,14 +1,30 @@
-
 <?php
-        if(session_status()===PHP_SESSION_NONE)
-        session_start();
+if(session_status()===PHP_SESSION_NONE)
+session_start();
 
-        if(isset($_POST["exportar"])){
-            
-            $nombre = $_POST["ficheroExportar"];
-            $fichajes = new Fichajes();
-            $fichajes->exportToCSV($nombre);
-        }
+if(isset($_POST["exportar"])){
+    $nombre = $_POST["ficheroExportar"];
+    $fichajes = new Fichajes();
+    $fichajes->exportToCSV($nombre);
+}
+?>
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>F1Desktop - Libre PHP</title>
+    <meta name="author" content="Juan Gómez Tejeda"/>
+    <meta name="description" content="Información acerca del circuito de esta semana"/>
+    <meta name="keywords" content="f1, formula1, circuito, carreras"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="icon" href="multimedia/imagenes/favicon.ico"/>
+    <?php
+        
         class Fichajes{
             private $server;
             private $user;
@@ -29,9 +45,7 @@
 
                 if ($this->db->connect_errno) {
                     echo "Error de conexión: " . $this->db->connect_error;
-                  } else {
-                    echo $this->db->host_info . "\r\n";
-                }
+                  }
             }
 
             function setup(){
@@ -183,8 +197,6 @@
                             }
                         }
                         fclose($file);
-                    
-                    
             }
         }
         
@@ -252,6 +264,7 @@
             function exportToCSV($nombreFichero){
                 header('Content-Type: text/csv; charset=utf-8');
                 header('Content-Disposition: attachment; filename="'.$nombreFichero.'.csv";');
+                
                 $output = fopen('php://output',"w");
                 $coches = $this->getCoches();
                 $escuderias=$this->getEscuderias();
@@ -296,7 +309,6 @@
                     }
                     fwrite($output,$fila."\n");
                 }
-                
                 fclose($output);
                 exit;
             }
@@ -329,18 +341,21 @@
             function arrayArrayToList($array, $tipo){
                 echo "<".$tipo.">";
                 for( $i= 0;$i<count($array);$i++){
+                    $element =$array[$i];
                     echo "<li>";
-                    $this->arrayToDL($array[$i]);
-                    echo "<li>";
+                    $this->arrayToDL($element);
+                    echo "</li>";
                 }
+                
                 echo "</".$tipo.">";
             }
             function arrayToDL($array){
                 echo "<dl>";
                 $keys = array_keys($array);
                 for ($i=0; $i<count($keys); $i++){
-                    echo "<dt>". $keys[$i] ."</dt>";
-                    echo "<dd>" . $array[$keys[$i]]."</dd>";
+                    $key = $keys[$i];
+                    echo "<dt>". $key ."</dt>";
+                    echo "<dd>" . $array[$key]."</dd>";
                 }
                 echo "</dl>";
             }
@@ -350,21 +365,6 @@
         $fichajes = new Fichajes();
         
     ?>
-<!DOCTYPE HTML>
-
-<html lang="es">
-<head>
-    <!-- Datos que describen el documento -->
-    <meta charset="UTF-8" />
-    <title>F1Desktop - Libre PHP</title>
-    <meta name="author" content="Juan Gómez Tejeda"/>
-    <meta name="description" content="Información acerca del circuito de esta semana"/>
-    <meta name="keywords" content="f1, formula1, circuito, carreras"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
-    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
-    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
-    <link rel="icon" href="multimedia/imagenes/favicon.ico"/>
-    
 </head>
 
 <body>

@@ -10,7 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
-    <link rel="stylesheet" type="text/css" href="estilo/mapa.css" />
     <link rel="stylesheet" type="text/css" href="estilo/carrusel.css" />
 
     <link rel="icon" href="multimedia/imagenes/favicon.ico"/>
@@ -144,11 +143,10 @@
             <input type="button" value="Obtener mapa dinamico" onclick="viajes.showDynamicMap();">
             Obtener mapa dinamico
         </label>
-        <article>
-            <p>aaa</p>
-            <h4>Mapa dinámico</h4>
-            <div ></div>
-        </article>
+        <div>
+            
+        </div>
+        
         <script>
             var viajes = new Viajes();
         </script>
