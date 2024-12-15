@@ -115,6 +115,7 @@ class Semaforo{
 
         var submit = document.createElement("input");
         submit.setAttribute("type", "submit");
+        submit.setAttribute("value","guardar");
         submit.textContent ="Submit";
 
         form.appendChild(labelName);
