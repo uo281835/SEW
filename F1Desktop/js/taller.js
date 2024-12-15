@@ -36,7 +36,6 @@ class Taller{
                 var lineas = texto.split("\n");
                 for(var i =0; i<lineas.length; i++){
                     var valores = lineas[i].split("_");
-                    console.log(valores);
                     this.partes.push({
                         "nombre":valores[0],
                         "velocidad":valores[1],
@@ -92,6 +91,9 @@ class Taller{
             $(section).append(p2);
             $(section).attr("draggable","true")
             $(section).on("drag", this.drag.bind(this, parte));
+            $(section).on("touchstart", this.handleTouchStart.bind(this, parte));
+            $(section).on("touchmove", this.handleTouchMove.bind(this));
+            $(section).on("touchend", this.handleTouchEnd.bind(this));
             $(article).append(section);
         }
         $("main").append(article);
@@ -100,7 +102,6 @@ class Taller{
 
     drag(parte){
         this.parteDraggeada = parte;
-        console.log(parte);
     }
 
     drop(slot){
@@ -124,6 +125,68 @@ class Taller{
 
         this.guardarEnBaseDeDatos(parte, slot);
     }
+
+    handleTouchStart(parte) {
+        this.parteDraggeada = parte;
+        this.activeEvent = 'start';
+    }
+
+    handleTouchMove(event) {
+        this.lastPosition = event;
+        this.activeEvent = 'move';
+    }
+
+    handleTouchEnd(e) {
+        var touch = this.lastPosition.changedTouches[0];
+        var posX = touch.clientX;
+        var posY = touch.clientY;
+        if (this.activeEvent === 'move') {
+            var article = $("article")[0];
+            
+            var slots = $("section",article);
+            var distancia =188888;
+            var slot =-1;
+            for(var i =0; i<slots.length; i++){
+                var dropZone = slots[i];
+                var r2 = dropZone.getBoundingClientRect();
+                var top2 = r2.top;
+                var left2 = r2.left;
+                var distanciaConcreta = this.distancia(posX, posY, left2, top2);
+                if(distanciaConcreta<distancia){
+                    if (this.detectTouchEnd(left2, 
+                        top2, posX, posY, r2.width, r2.height)) {
+                        distancia=distanciaConcreta;
+                        slot=i;
+                    } 
+                    
+                }
+                
+            }
+            if (slot>=0 ) {
+                this.drop(slot);
+            } 
+
+           
+        }
+    }
+
+    detectTouchEnd(x1, y1, x2, y2, w, h) {
+        //Very simple detection here
+        if (x2 - x1 > w) 
+            return false;
+        if (y2 - y1 > h) 
+            return false;
+        return true;
+    }
+
+    distancia(x1,y1,x2,y2){
+        var distanciaX = Number(Number(x2)-Number(x1));
+        var distanciaY = Number(Number(y2)-Number(y1));
+
+        return Math.sqrt(distanciaX*distanciaX+distanciaY*distanciaY);
+    }
+
+
 
     guardarEnBaseDeDatos(parte, slot){
         this.partesSeleccionadas[slot] = parte;
@@ -169,7 +232,6 @@ class Taller{
             var partes = transaction.objectStore("partes");
             partes.getAll().onsuccess = function(event){
                 var result = event.target.result;
-                console.log(result);
                 var cantidad = result.length;
                 if(cantidad>=1){
                     var configuracion = result.slice(-1)[0];
@@ -177,7 +239,6 @@ class Taller{
                     for(var i =0; i<configuracion.length; i++){
                         var parte = configuracion[i];
                         
-                        console.log(parte);
                         if(parte.nombre!== undefined){
                             var articleSection = $("article")[0];
                             var section =  $("section",articleSection)[i];
@@ -214,7 +275,6 @@ class Taller{
             request2.onsuccess = function(){
                 partes.getAll().onsuccess = (event)=>{
                     var result = event.target.result;
-                    console.log(result);
                 }
             }.bind(this);
             request2.onerror = function(){
@@ -242,7 +302,6 @@ class Taller{
                 var request2 = partes.delete("latest");
 
                 request2.onsuccess = function(){
-                    console.log("Se ha reseteado todo");
                 }.bind(this);
                 request2.error = function(){
                     console.log("Error");
@@ -266,11 +325,9 @@ class Taller{
             var partes = transaction.objectStore("partes");
             partes.getAll().onsuccess = (event)=>{
                 var result = event.target.result;
-                console.log(result);
             }
             
         }.bind(this);
-        console.log(datos);
     }
 
 

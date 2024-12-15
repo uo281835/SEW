@@ -17,7 +17,6 @@ class Noticias{
                 var lineas = texto.split("\n");
                 for(var i =0; i<lineas.length; i++){
                     var valores = lineas[i].split("_");
-                    console.log(valores);
                     this.addNoticiaArticle(valores[0],valores[1], valores[2]);
                 }
             }.bind(this);
