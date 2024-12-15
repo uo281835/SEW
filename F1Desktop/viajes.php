@@ -62,7 +62,8 @@
                 $this->getImages($amount);
                 for($i=0;$i<count($this->fotos);$i++) {
                     $foto = $this->fotos[$i];
-                    $titulo = $foto->title;
+                    $titulos = $foto->title;
+                    $titulo = explode(",", $titulos)[0];
                     $URLfoto = $foto->media->m;
                     echo "<img alt='".$titulo."' src='".$URLfoto."' />";
                 }

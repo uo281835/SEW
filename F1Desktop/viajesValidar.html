@@ -1,0 +1,74 @@
+<html lang="es"><head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+    <title>F1Desktop - Viajes</title>
+    <meta name="author" content="Juan Gómez Tejeda">
+    <meta name="description" content="Reserva de viajes">
+    <meta name="keywords" content="f1, formula1, viajes, turismo, reserva">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css">
+    <link rel="stylesheet" type="text/css" href="estilo/carrusel.css">
+
+    <link rel="icon" href="multimedia/imagenes/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/viajes.js"></script>
+   
+
+        </head>
+
+<body>
+    <header>
+        <h1>F1 Desktop</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="piloto.html">Piloto</a>
+            <a href="noticias.html">Noticias</a>
+            <a href="calendario.html">Calendario</a>
+            <a href="meteorologia.html">Meteorología</a>
+            <a href="circuito.html">Cicuito</a>
+            <a href="viajes.php" class="active">Viajes</a>
+            <a href="juegos.html">Juegos</a>
+        </nav>
+    </header>
+    <p><a href="index.html">Inicio</a> &gt;&gt; Viajes</p>
+
+    <h2>Viajes</h2>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <p>En desarrollo</p>
+    <main>
+        <h3>Mapa</h3>
+        <label>
+            <input type="button" value="Obtener mapa estatico" onclick="viajes.showMap();">
+            Obtener mapa dinamico
+        </label>
+        <label>
+            <input type="button" value="Obtener mapa dinamico" onclick="viajes.showDynamicMap();">
+            Obtener mapa dinamico
+        </label>
+        <div>
+            
+        </div>
+        
+        <script>
+            var viajes = new Viajes();
+        </script>
+        <article>
+            <h3>Carrousel</h3>
+            <h3>JSON decodificado correctamente</h3><img alt="Monument aux guerriers Shogi-tou" src="https://live.staticflickr.com/65535/54206181040_de3486c778_m.jpg"><img alt="Paysage tokyoïte" src="https://live.staticflickr.com/65535/54206181155_3560d271f1_m.jpg"><img alt="Statue de Saigō Takamori" src="https://live.staticflickr.com/65535/54206006243_04c6c40846_m.jpg"><img alt="A path in light and shadows" src="https://live.staticflickr.com/65535/54204137168_523c97c0fe_m.jpg"><img alt="Devantures de restaurants" src="https://live.staticflickr.com/65535/54203731781_2402f6e10d_m.jpg"><img alt="Devantures de restaurants" src="https://live.staticflickr.com/65535/54202836902_530b4c2d2f_m.jpg"><img alt="Entrée du parc" src="https://live.staticflickr.com/65535/54203977168_63122b89a2_m.jpg"><img alt="Chez le marchand" src="https://live.staticflickr.com/65535/54200642834_08ec35d95d_m.jpg"><img alt="Chez le marchand" src="https://live.staticflickr.com/65535/54200634433_9ab3cffd16_m.jpg"><img alt="Chez le marchand" src="https://live.staticflickr.com/65535/54200634278_915a821458_m.jpg"><button> &gt; </button><button> &lt; </button>            <script>
+                viajes.inicializarCarrousel();
+            </script>
+        </article>
+        <article>
+            <h3>Monedas</h3>
+            <p>  1 Yenes equivalen a 0.01€</p><p>        </p></article>
+    </main>
+
+    <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU"></script>
+
+    <footer>
+        <p>En desarrollo</p>
+    </footer>
+
+
+</body></html>
