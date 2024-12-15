@@ -3,16 +3,21 @@ h2{
     text-align: center;
 }
 /*0,0,1*/
-main{
+body main section{
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
+    background-color: darkblue;
+}
+
+body main section h2{
+    flex: 1 0 100%;
 }
 /*0,0,2*/
 main article{
-    flex-basis: 15%;
-    width: 4em;
+    flex: 1 0 21%;
+    width: 10em;
     height: 12em;
-    margin: 2em;
+    margin: 0.2em;
     transform: scale(1);
     cursor: pointer;
     transform-style: preserve-3d;

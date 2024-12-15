@@ -67,7 +67,7 @@ class Memoria{
             img.setAttribute("src",card.source)
             img.setAttribute("alt", card.element)
             article.appendChild(img)
-            document.querySelector("main").appendChild(article)
+            document.querySelector("main section").appendChild(article)
         }
     }
 
@@ -150,6 +150,7 @@ class Memoria{
         if(this.firstCard!=null && this.secondCard!=null){
             var val1 = this.firstCard.getAttribute("data-element");
             var val2 = this.secondCard.getAttribute("data-element");
+            this.lockBoard=true;
             if (val1 == val2){
                 this.disableCards();
             } else{
