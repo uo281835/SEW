@@ -47,7 +47,37 @@ if(isset($_POST["exportar"])){
                     echo "Error de conexión: " . $this->db->connect_error;
                   }
             }
+            function borrarDB(){
+                $this->db->query(
+                    "DROP TABLE ejerciciolibre.escuderias;"
 
+                );
+                $this->db->query(
+                    "DROP TABLE ejerciciolibre.pilotos;"
+
+                );
+                $this->db->query(
+                    "DROP TABLE ejerciciolibre.coches;"
+
+                );
+                $this->db->query(
+                    "DROP TABLE ejerciciolibre.fichado_por;"
+
+                );
+                $this->db->query(
+                    "DROP TABLE ejerciciolibre.conduce;"
+
+                );
+                $this->db->query(
+                    "DROP database ejerciciolibre;"
+
+                );
+            }
+
+            function reiniciar(){
+                $this->borrarDB();
+                $this->setup();
+            }
             function setup(){
                 $this->db->query(
                     "CREATE DATABASE if not exists ejerciciolibre;"
@@ -377,7 +407,7 @@ if(isset($_POST["exportar"])){
             <a href="../calendario.html">Calendario</a>
             <a href="../meteorologia.html">Meteorología</a>
             <a href="../circuito.html">Circuito</a>
-            <a href="php/viajes.php">Viajes</a>
+            <a href="viajes.php">Viajes</a>
             <a href="../juegos.html"  class="active">Juegos</a>
         </nav>
     </header>
@@ -416,7 +446,7 @@ if(isset($_POST["exportar"])){
         </article>
         <?php 
             if(isset($_POST["inicializar"])){
-                $fichajes->setup();
+                $fichajes->reiniciar();
             }
             if(isset($_POST["cargar"])){
                 $fichajes->importFromCSV();
