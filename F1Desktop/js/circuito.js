@@ -19,6 +19,7 @@ class Circuito{
                 var parser = new DOMParser();
                 var doc = parser.parseFromString(texto,"text/xml");
 
+                var article1 = $("article");
                 var article = document.createElement("article");
                 
                 //Nombre
@@ -276,6 +277,7 @@ class Circuito{
                 var doc = parser.parseFromString(texto,"text/xml");
                 var puntos = $("Placemark", doc);
                 var listaRuta = new Array();
+                var puntoF =null;
                 for(var i =0; i<puntos.length; i++){
                     var punto = puntos[i];
                     var coordinates = $("coordinates", punto).text().split("\n")[1].split(",");
@@ -285,6 +287,8 @@ class Circuito{
 
 
                     var latLong ={lat:latitud, lng:longitud};
+                    if(i==0)
+                        puntoF = latLong;
 
                     new google.maps.Marker({
                         position: latLong,
@@ -292,10 +296,13 @@ class Circuito{
                         title: "Punto "+i,
                       });
                     
+
                       listaRuta.push({lat:latitud, lng:longitud});
 
 
                 }
+
+                listaRuta.push(puntoF);
                 var flightPath = new google.maps.Polyline({
                     path: listaRuta,
                     geodesic: true,
@@ -314,6 +321,10 @@ class Circuito{
     }
     readSVG(files){
         var archivo = files[0];
+        var svg0 = $("svg");
+        if(svg0!==null || svg0!==undefined){
+            $("main").remove(svg0);
+        }
         if(archivo.type.match(".svg")){
             var lector = new FileReader();
             lector.onload = function(evento){

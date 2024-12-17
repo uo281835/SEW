@@ -4,262 +4,362 @@
 <Placemark>
 <name> punto 0</name>
 <Point><coordinates>
-136.5363618,34.8425391,54.1276576
+136.5430397,34.8405936,22.1869470
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 1</name>
 <Point><coordinates>
-136.5416245,34.8402251,17.8516727
+136.5433408,34.8402124,20.4194555
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 2</name>
 <Point><coordinates>
-136.5416245 ,34.8402251 ,17.8516727 
+136.5434146,34.8399978,19.6649846
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 3</name>
 <Point><coordinates>
-136.5363618 ,34.8425391 ,54.1276576 
+136.5434039,34.8398027,18.8615678
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 4</name>
 <Point><coordinates>
-136.5416245 , 34.8402251, 17.8516727
+136.5431975,34.8392581,18.2785546
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 5</name>
 <Point><coordinates>
-136.5364410 ,34.8425049 ,46.6756399 
+136.5430520,34.8390825,18.7583245
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 6</name>
 <Point><coordinates>
-136.5364410 ,34.8425049 ,46.6756399 
+136.5427389,34.8389636,19.5469669
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 7</name>
 <Point><coordinates>
- 136.5406941,34.8416835 ,19.4476119 
+136.5423883,34.8389841,20.4678725
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 8</name>
 <Point><coordinates>
-136.5393381 ,34.8407508 ,36.0601989 
+136.5421161,34.8391409,21.2021749
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 9</name>
 <Point><coordinates>
- 136.5364410,34.8425049 ,46.6756399 
+136.5419401,34.8393670,21.6396084
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 10</name>
 <Point><coordinates>
- 136.5364410,34.8425049 ,46.6756399 
+136.5411348,34.8404042,23.7309049
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 11</name>
 <Point><coordinates>
-136.5382738 ,34.8421596 ,38.4664111 
+136.5408375,34.8406108,24.4022212
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 12</name>
 <Point><coordinates>
-136.5374814 ,34.8422876 ,40.7321019 
+136.5404787,34.8407042,25.2908069
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 13</name>
 <Point><coordinates>
-136.5364410 ,34.8425049 ,46.6756399 
+136.5399621,34.8407147,27.0680335
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 14</name>
 <Point><coordinates>
-136.5377480 ,34.8443791 ,38.9051815 
+136.5396313,34.8408683,28.8447362
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 15</name>
 <Point><coordinates>
- 136.5377480,34.8443791 , 38.9051815
+136.5394434,34.8410864,29.9754294
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 16</name>
 <Point><coordinates>
-136.5377480 ,34.8443791 , 38.9051815
+136.5392442,34.8417393,33.1987207
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 17</name>
 <Point><coordinates>
- 136.5329391,34.8451815 , 44.6057103
+136.5390774,34.8419874,34.6697928
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 18</name>
 <Point><coordinates>
-136.5359712 ,34.8452197 ,52.5442471 
+136.5388805,34.8421597,35.9397799
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 19</name>
 <Point><coordinates>
-136.5329391 ,34.8432136 ,44.6057103
+136.5386730,34.8422407,36.9276939
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 20</name>
 <Point><coordinates>
- 136.5348967, 34.8453816,53.9401314 
+136.5383366,34.8422985,38.3949229
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 21</name>
 <Point><coordinates>
-136.5329391 ,34.8432136 ,44.6057103 
+136.5377601,34.8423156,40.0981589
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 22</name>
 <Point><coordinates>
-136.5299558 ,34.8435649 ,39.9912984 
+136.5373629,34.8424720,40.4943278
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 23</name>
 <Point><coordinates>
- 136.5299558,34.8435649 ,136.5299558 
+136.5371341,34.8426931,40.0557077
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 24</name>
 <Point><coordinates>
-136.5284397 ,34.8446919 ,51.3438469 
+136.5370124,34.8429996,39.2721222
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 25</name>
 <Point><coordinates>
- 136.5296376, 34.8465136,57.2491114 
+136.5370705,34.8433103,38.4183274
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 26</name>
 <Point><coordinates>
- 136.5296376, 34.8465136, 57.2491114
+136.5373666,34.8439349,39.5728995
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 27</name>
 <Point><coordinates>
-136.5293302 , 34.8457660, 58.0720033
+136.5373009,34.8442720,42.1585011
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 28</name>
 <Point><coordinates>
-136.5296376 ,34.8465136 ,57.2491114 
+136.5370375,34.8446149,45.5131965
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 29</name>
 <Point><coordinates>
-136.5296376 ,34.8465136 ,57.2491114 
+136.5364247,34.8449197,49.9730821
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 30</name>
 <Point><coordinates>
-136.5293302 ,34.8460758 ,58.0720033 
+136.5352549,34.8450351,52.5269696
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 31</name>
 <Point><coordinates>
- 136.5263617, 34.8453302,50.6874772 
+136.5344088,34.8448009,51.6152650
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 32</name>
 <Point><coordinates>
-136.5269584 ,34.8458851 ,62.8685595 
+136.5339863,34.8445538,51.0523118
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 33</name>
 <Point><coordinates>
-136.5245542 ,34.8456442 , 51.8051064
+136.5332601,34.8438906,49.8100805
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 34</name>
 <Point><coordinates>
-136.5249206 ,34.8471841 ,63.4184398
+136.5326240,34.8432765,48.6260140
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 35</name>
 <Point><coordinates>
-136.5233764 ,34.8471628 ,57.8551968 
+136.5309335,34.8431384,44.8136892
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 36</name>
 <Point><coordinates>
- 136.5233764,34.8471628 , 57.8551968
+136.5308046,34.8432182,44.7015273
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 37</name>
 <Point><coordinates>
-136.5228002 , 34.8481022,58.4416416 
+136.5307399,34.8433781,44.6891805
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 38</name>
 <Point><coordinates>
-136.5254239,34.8472707 ,63.7397175
+136.5301769,34.8458241,49.5764115
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 39</name>
 <Point><coordinates>
-136.5217310 ,34.8476149 ,59.6612714 
+136.5302459,34.8462478,51.8917306
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 40</name>
 <Point><coordinates>
-136.5217310 ,34.8476149 ,59.6612714 
+136.5306217,34.8469539,55.6281050
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 41</name>
 <Point><coordinates>
- 136.5230333,34.8463385 ,45.4906033 
+136.5306075,34.8471258,56.2545319
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 42</name>
 <Point><coordinates>
- 136.5250341,34.8458797 ,54.7645078 
+136.5304890,34.8472029,56.4794887
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 43</name>
 <Point><coordinates>
-136.5283077 , 34.8451531,61.5638791 
+136.5303279,34.8472006,56.5780179
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 44</name>
 <Point><coordinates>
-136.5307398 , 34.8451131,57.1983588 
+136.5302112,34.8471114,56.6542714
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 45</name>
 <Point><coordinates>
-136.5329850 , 34.8451365, 63.4183555
+136.5298280,34.8465998,56.9880118
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 46</name>
 <Point><coordinates>
- 136.5329850,34.8451365 , 63.4183555
+136.5294834,34.8461448,57.3427978
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 47</name>
 <Point><coordinates>
-136.5361500 , 34.8462419, 53.1714088
+136.5288103,34.8455588,58.0933534
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 48</name>
 <Point><coordinates>
- 136.5351800,34.8450869 ,52.7131563 
+136.5280276,34.8453706,58.4914287
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 49</name>
 <Point><coordinates>
-136.5351800 ,34.8450869 , 52.7131563
+136.5268800,34.8454130,55.5034681
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 50</name>
 <Point><coordinates>
-136.5377288 , 34.8440374,38.2420234 
+136.5255620,34.8458231,53.5461887
 </coordinates></Point></Placemark>
 <Placemark>
 <name> punto 51</name>
 <Point><coordinates>
- 136.5402045, 34.8429239, 46.8373725
+136.5251988,34.8460257,54.8311798
+</coordinates></Point></Placemark>
+<Placemark>
+<name> punto 52</name>
+<Point><coordinates>
+136.5245592,34.8466411,57.0948346
+</coordinates></Point></Placemark>
+<Placemark>
+<name> punto 53</name>
+<Point><coordinates>
+136.5237996,34.8480732,58.5829198
+</coordinates></Point></Placemark>
+<Placemark>
+<name> punto 54</name>
+<Point><coordinates>
+136.5234272,34.8483321,58.6550745
+</coordinates></Point></Placemark>
+<Placemark>
+<name> punto 55</name>
+<Point><coordinates>
+136.5224176,34.8482744,58.7042585
+</coordinates></Point></Placemark>
+<Placemark>
+<name> punto 56</name>
+<Point><coordinates>
+136.5220190,34.8479887,58.6778267
+</coordinates></Point></Placemark>
+<Placemark>
+<name> punto 57</name>
+<Point><coordinates>
+136.5219523,34.8476134,58.3431130
+</coordinates></Point></Placemark>
+<Placemark>
+<name> punto 58</name>
+<Point><coordinates>
+136.5221080,34.8473181,56.3836874
+</coordinates></Point></Placemark>
+<Placemark>
+<name> punto 59</name>
+<Point><coordinates>
+136.5229889,34.8466557,48.4585409
+</coordinates></Point></Placemark>
+<Placemark>
+<name> punto 60</name>
+<Point><coordinates>
+136.5245797,34.8458327,45.7833977
+</coordinates></Point></Placemark>
+<Placemark>
+<name> punto 61</name>
+<Point><coordinates>
+136.5262200,34.8452406,49.7019249
+</coordinates></Point></Placemark>
+<Placemark>
+<name> punto 62</name>
+<Point><coordinates>
+136.5311531,34.8438481,50.9045618
+</coordinates></Point></Placemark>
+<Placemark>
+<name> punto 63</name>
+<Point><coordinates>
+136.5323207,34.8441444,51.6512157
+</coordinates></Point></Placemark>
+<Placemark>
+<name> punto 64</name>
+<Point><coordinates>
+136.5332129,34.8447037,52.9937097
+</coordinates></Point></Placemark>
+<Placemark>
+<name> punto 65</name>
+<Point><coordinates>
+136.5348990,34.8458869,56.0171481
+</coordinates></Point></Placemark>
+<Placemark>
+<name> punto 66</name>
+<Point><coordinates>
+136.5353890,34.8456360,54.8774302
+</coordinates></Point></Placemark>
+<Placemark>
+<name> punto 67</name>
+<Point><coordinates>
+136.5360286,34.8459809,53.2231309
+</coordinates></Point></Placemark>
+<Placemark>
+<name> punto 68</name>
+<Point><coordinates>
+136.5366975,34.8460609,50.5177920
+</coordinates></Point></Placemark>
+<Placemark>
+<name> punto 69</name>
+<Point><coordinates>
+136.5374377,34.8458857,47.6272976
+</coordinates></Point></Placemark>
+<Placemark>
+<name> punto 70</name>
+<Point><coordinates>
+136.5379660,34.8455817,42.1396594
+</coordinates></Point></Placemark>
+<Placemark>
+<name> punto 71</name>
+<Point><coordinates>
+136.5407942,34.8428056,30.8397051
 </coordinates></Point></Placemark>
 </Document>
 </kml>

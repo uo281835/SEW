@@ -827,7 +827,7 @@
                     <altura>30.8397051</altura>
                </coordenadas>
            </punto>
-            <distancia unidad="m">400.14 m</distancia>
+            <distancia unidad="m">400.14</distancia>
             <numeroSector>3</numeroSector>
        </tramo>
        

@@ -66,64 +66,80 @@ class Semaforo{
         this.createRecordForm();
     }
     createRecordForm(){
-        var form = document.createElement("form");
-        form.setAttribute("action", "#");
-        form.setAttribute("method", "post");
-        form.setAttribute("name","record")
 
-        var labelName = document.createElement("label");
-        labelName.textContent="Nombre";
-
-        var name = document.createElement("input");
-        name.setAttribute("type", "text");
-        name.setAttribute("name", "nombre");
-        name.setAttribute("title", "nombre");
-        labelName.appendChild(name);
-
-        var labelSurname = document.createElement("label");
-        labelSurname.textContent="Apellido";
+        var milisegundosUnload = this.unload_moment.getTime();
+        var milisegundosActual = this.clic_moment.getTime();
+        var diferencia = (milisegundosActual-milisegundosUnload)/1000;
+        var form0 = $("form")[0];
+        if(form0!==undefined)
+        {
+            var campoNivel = $("input", form0)[2];
+            campoNivel.value=(this.difficulty*10);
+            var campoPuntos = $("input", form0)[3];
+            campoPuntos.value= (diferencia);
+            
+        }else{
+            var form = document.createElement("form");
+            form.setAttribute("action", "#");
+            form.setAttribute("method", "post");
+            form.setAttribute("name","record")
+    
+            var labelName = document.createElement("label");
+            labelName.textContent="Nombre";
+    
+            var name = document.createElement("input");
+            name.setAttribute("type", "text");
+            name.setAttribute("name", "nombre");
+            name.setAttribute("title", "nombre");
+            labelName.appendChild(name);
+    
+            var labelSurname = document.createElement("label");
+            labelSurname.textContent="Apellido";
+            
+            var surname = document.createElement("input");
+            surname.setAttribute("type", "text");
+            surname.setAttribute("name", "apellidos");
+            surname.setAttribute("title", "apellidos");
+            labelSurname.appendChild(surname);
+    
+            var labelLevel = document.createElement("label");
+            labelLevel.textContent="Dificultad";
+            
+            var level = document.createElement("input");
+            level.setAttribute("type", "number");
+            level.setAttribute("name", "nivel");
+            level.setAttribute("title", "nivel");
+            level.setAttribute("contenteditable", "false");
+            level.value= this.difficulty*10;
+            labelLevel.appendChild(level);
+    
+    
+            var labelScore = document.createElement("label");
+            labelScore.textContent="Puntuación";
+    
+            var score = document.createElement("input");
+            score.setAttribute("type", "number");
+            score.setAttribute("name", "tiempo");
+            score.setAttribute("title", "tiempo");
+            score.setAttribute("contenteditable", "false");
+            score.value=diferencia;
+            labelScore.appendChild(score);
+    
+            var submit = document.createElement("input");
+            submit.setAttribute("type", "submit");
+            submit.setAttribute("value","guardar");
+            submit.textContent ="Submit";
+    
+            form.appendChild(labelName);
+            form.appendChild(labelSurname);
+            form.appendChild(labelLevel);
+            form.appendChild(labelScore);
+            form.appendChild(submit);
+    
+            $("main").append(form);
+        }
+            
         
-        var surname = document.createElement("input");
-        surname.setAttribute("type", "text");
-        surname.setAttribute("name", "apellidos");
-        surname.setAttribute("title", "apellidos");
-        labelSurname.appendChild(surname);
-
-        var labelLevel = document.createElement("label");
-        labelLevel.textContent="Dificultad";
-        
-        var level = document.createElement("input");
-        level.setAttribute("type", "number");
-        level.setAttribute("name", "nivel");
-        level.setAttribute("title", "nivel");
-        level.setAttribute("contenteditable", "false");
-        level.value= this.difficulty*10;
-        labelLevel.appendChild(level);
-
-
-        var labelScore = document.createElement("label");
-        labelScore.textContent="Puntuación";
-
-        var score = document.createElement("input");
-        score.setAttribute("type", "number");
-        score.setAttribute("name", "tiempo");
-        score.setAttribute("title", "tiempo");
-        score.setAttribute("contenteditable", "false");
-        score.value=-this.unload_moment.getMilliseconds()+this.clic_moment.getMilliseconds();
-        labelScore.appendChild(score);
-
-        var submit = document.createElement("input");
-        submit.setAttribute("type", "submit");
-        submit.setAttribute("value","guardar");
-        submit.textContent ="Submit";
-
-        form.appendChild(labelName);
-        form.appendChild(labelSurname);
-        form.appendChild(labelLevel);
-        form.appendChild(labelScore);
-        form.appendChild(submit);
-
-        $("main").append(form);
 
 
     }
