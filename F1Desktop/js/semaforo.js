@@ -37,11 +37,10 @@ class Semaforo{
         document.querySelector("main").classList.add("load");
         document.querySelectorAll("button")[0].setAttribute("disabled","");
 
-        console.log(this)
         var f = function(game){
             this.unload_moment=new Date();
             this.endSequence();
-        }.bind(this)
+        }.bind(this);
         setTimeout(f, 2000+this.difficulty*100);
     
     }

@@ -20,9 +20,9 @@ if(isset($_POST["exportar"])){
     <meta name="description" content="Información acerca del circuito de esta semana"/>
     <meta name="keywords" content="f1, formula1, circuito, carreras"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
-    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
-    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
-    <link rel="icon" href="multimedia/imagenes/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="../estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="../estilo/layout.css" />
+    <link rel="icon" href="../multimedia/imagenes/favicon.ico"/>
     <?php
         
         class Fichajes{
@@ -371,17 +371,17 @@ if(isset($_POST["exportar"])){
     <header>
         <h1>F1 Desktop</h1>
         <nav>
-            <a href="index.html">Inicio</a>
-            <a href="piloto.html">Piloto</a>
-            <a href="noticias.html">Noticias</a>
-            <a href="calendario.html">Calendario</a>
-            <a href="meteorologia.html">Meteorología</a>
-            <a href="circuito.html">Circuito</a>
-            <a href="viajes.html">Viajes</a>
-            <a href="juegos.html"  class="active">Juegos</a>
+            <a href="../index.html">Inicio</a>
+            <a href="../piloto.html">Piloto</a>
+            <a href="../noticias.html">Noticias</a>
+            <a href="../calendario.html">Calendario</a>
+            <a href="../meteorologia.html">Meteorología</a>
+            <a href="../circuito.html">Circuito</a>
+            <a href="php/viajes.php">Viajes</a>
+            <a href="../juegos.html"  class="active">Juegos</a>
         </nav>
     </header>
-    <p><a href="index.html">Inicio</a> >> <a href="juegos.html">Juegos</a> >> Minijuego PHP</p>
+    <p><a href="../index.html">Inicio</a> >> <a href="../juegos.html">Juegos</a> >> Minijuego PHP</p>
 
     <main>
         <h2>Ejercicio Libre PHP</h2>

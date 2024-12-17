@@ -9,9 +9,14 @@ body main section{
     background-color: darkblue;
     color: black;
 }
-
+/*0,0,4*/
 body main section h2{
     flex: 1 0 100%;
+}
+/*0,0,4*/
+body main section p{
+    flex: 1 0 100%;
+    font-size: 1.5em;
 }
 /*0,0,2*/
 main article{
@@ -36,7 +41,7 @@ article[data-state="revealed"] {
 }
 /*0,0,3*/
 main article h3,
-/*0,0,3*/
+/*0,0,4*/
 body main article img {
     margin: 0em;
     width: 100%;
@@ -52,7 +57,7 @@ main article h3 {
     align-items: center;
     justify-content: center;
 }
-/*0,0,1*/
+/*0,0,2*/
 article img {
     transform: rotateY(180deg);
 }

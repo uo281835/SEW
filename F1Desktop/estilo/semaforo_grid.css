@@ -31,7 +31,7 @@ en el background color*/
       grid-column: 1 / -1;
       text-align: center;
   }
-  /*0,0,1*/
+  /*0,0,3*/
   body main div {
     width: 100%;
     height: 90%;
@@ -74,7 +74,7 @@ main.load div:nth-of-type(3) {
 main.load div:nth-of-type(4) {
     animation: 0.5s encender 1.5s forwards;
 }
-  /*0,2,2*/
+  /*0,1,2*/
 
 main.unload div{
     animation: 0.1s encender 0s forwards;

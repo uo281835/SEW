@@ -24,11 +24,6 @@ class Agenda{
                     var fecha = race.date;
                     var hora = race.time;
 
-                    console.log(raceName)
-                    console.log(circuitName)
-                    console.log(lat, long)
-                    console.log(fecha, hora)
-
                         
                     //PINTADO
                     var article = document.createElement("article");

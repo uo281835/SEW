@@ -74,10 +74,7 @@ class Viajes{
       }
 
       showDynamicMap(){
-        console.log("enseñando mapa")
-        console.log(this)
-        var centro = {lat:0, lng:0}
-        console.log(centro)
+        var centro = {lat:0, lng:0};
         var mapaGeoposicionado = new google.maps.Map(document.querySelector('body div'),{
             zoom: 10,
             center:centro,

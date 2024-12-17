@@ -21,10 +21,8 @@ class Circuito{
 
                 var article = document.createElement("article");
                 
-                console.log(doc);
                 //Nombre
                 var nombre = $("circuito", doc).attr("nombre");
-                console.log(nombre)
                 var title = document.createElement("h3");
                 $(title).text("Información del circuito: "+nombre);
                 $(article).append(title);
@@ -42,7 +40,6 @@ class Circuito{
                 var longitudCValor = $(longitudC).text();
                 var longitudCUnidad = $(longitudC).attr("unidad");
                 var cadenaLongitud =longitudCValor+longitudCUnidad;
-                console.log(cadenaLongitud);
                 var termLongitud =document.createElement("dt");
                 $(termLongitud).text("Longitud");
                 var defLongitud = document.createElement("dd");
@@ -55,7 +52,6 @@ class Circuito{
                 var anchuraValor = $(anchura).text();
                 var anchuraUnidad = $(anchura).attr("unidad");
                 var cadenaAnchura = anchuraValor+anchuraUnidad;
-                console.log(cadenaAnchura);
                 var termAncho =document.createElement("dt");
                 $(termAncho).text("Anchura");
                 var defAncho = document.createElement("dd");
@@ -107,7 +103,6 @@ class Circuito{
                 var mesCarrera = $("mes", fechaCarrera).text();
                 var yearCarrera = $("year", fechaCarrera).text();
                 var cadenaFecha = "Fecha de la carrera: "+diaCarrera+"/"+mesCarrera+"/"+yearCarrera;
-                console.log(cadenaFecha);
                 var pFecha = document.createElement("p");
                 $(pFecha).text(cadenaFecha);
                 $(sectionFechaHora).append(pFecha);
@@ -117,7 +112,6 @@ class Circuito{
                 var minutoHora = $("minuto", horaCarrera).text();
                 var segundoHora = $("segundo", horaCarrera).text();
                 var cadenaHora = "Hora de la carrera: "+horaHora+":"+minutoHora+":"+segundoHora;
-                console.log(cadenaHora);
                 var pHora = document.createElement("p");
                 $(pHora).text(cadenaHora);
                 $(sectionFechaHora).append(pHora);
@@ -135,7 +129,6 @@ class Circuito{
                 $(article).append(sectionReferencias);
 
                 var referencias = $("referencia", doc);
-                console.log(referencias);
                 for(var i =0; i<referencias.length; i++){
                     var referencia = referencias[i];
                     var item = document.createElement("li");
@@ -250,8 +243,7 @@ class Circuito{
     }
 
     showDynamicMap(){
-        var centro = {lat:34.8429239, lng:136.5402045}
-        console.log(centro)
+        var centro = {lat:34.8429239, lng:136.5402045};
         var mapaGeoposicionado = new google.maps.Map(document.querySelector('body div'),{
             zoom: 10,
             center:centro,
@@ -286,9 +278,7 @@ class Circuito{
                 var listaRuta = new Array();
                 for(var i =0; i<puntos.length; i++){
                     var punto = puntos[i];
-                    console.log(punto);
                     var coordinates = $("coordinates", punto).text().split("\n")[1].split(",");
-                    console.log(coordinates);
 
                     var latitud =  Number(coordinates[1]);
                     var longitud =  Number(coordinates[0]);
@@ -330,7 +320,6 @@ class Circuito{
                 var texto = lector.result;
                 var parser = new DOMParser();
                 var doc = parser.parseFromString(texto, "image/svg+xml");
-                console.log(doc)
                 var svg = document.createElement("svg");
                 svg.innerHTML=texto;
                 $("main").append(svg);

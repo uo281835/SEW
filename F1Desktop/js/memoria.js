@@ -60,7 +60,7 @@ class Memoria{
             article.setAttribute("data-element",card.element);
             
             var h3 = document.createElement("h3");
-            h3.textContent= "Tarjeta de memoria";
+            h3.textContent= "Haz click para revelar";
             article.appendChild(h3)
 
             var img = document.createElement("img");
