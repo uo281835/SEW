@@ -91,21 +91,24 @@
                     try {
                 
                         // Decoding
-                        $response = json_decode($response_json);
+                        $response = json_decode($response_json, true);
                 
                         // Check for success
-                        if('success' === $response->result) {
+                        if('success' === $response["result"]) {
                 
                             // YOUR APPLICATION CODE HERE, e.g.
-                            $base_price = 1; // Your price in USD
-                            $EUR_price = round(($base_price * $response->conversion_rates->EUR), 2);
-                            echo '<p>  '.$base_price.' Yenes equivalen a '.$EUR_price. '€<p>';
+                            $base_price = 1; // Your price in EUR
+
+
+
+                            $EUR_price = round(($base_price * $response["conversion_rates"][$this->monedaCambio]), 2);
+                            echo '<p>  '.$base_price.' Yen equivale a '.$EUR_price. '€<p>';
                 
                         }
                 
                     }
                     catch(Exception $e) {
-                        // Handle JSON parse error...
+                        echo ''.$e->getMessage().'';
                     }
                 
                 }
