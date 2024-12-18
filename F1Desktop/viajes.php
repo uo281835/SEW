@@ -177,7 +177,7 @@
         </article>
     </main>
 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU" ></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVkddr_A68D5JGmQs9oomuHKdVAiKBEjc" ></script>
 
     <footer>
         <p>En desarrollo</p>

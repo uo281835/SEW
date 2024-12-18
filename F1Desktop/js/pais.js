@@ -86,7 +86,9 @@ class Pais{
                     nH+=1;
 
                     if($(precip).attr('probability')>0){
-                        lluvia+=$(precip).attr('value')
+                        var lluvia1 = Number($(precip).attr('value'));
+                        if(lluvia1!==NaN)
+                            lluvia+=lluvia1;
                     }
                     
 
@@ -123,13 +125,13 @@ class Pais{
                         $(ptHumid).text("Humedad:"+(humedadPromedio)+"%");
                         $(article).append(ptHumid);
 
+                        if(lluvia===NaN)
+                            lluvia=0;
                         var ptLluvia = document.createElement("p");
-                        $(ptLluvia).text("Lluvia:"+(lluvia));
+                        $(ptLluvia).text("Lluvia:"+(lluvia)+" l");
                         $(article).append(ptLluvia);
 
-                        var articulo =""
-                        articulo+="<p> Humedad: "+humedadPromedio+"</p>";
-                        articulo += "<p>Precipitación: " + lluvia + "</p></article>";
+                        
                         $("main section")[1].append(article);
 
                         //Reinicio de variables

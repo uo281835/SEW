@@ -46,7 +46,7 @@ class Viajes{
     }
 
     showMap(){
-        var apiKey = "&key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU";
+        var apiKey = "&key=AIzaSyDVkddr_A68D5JGmQs9oomuHKdVAiKBEjc";
         //URL: obligatoriamente https
         var url = "https://maps.googleapis.com/maps/api/staticmap?";
         //Parámetros

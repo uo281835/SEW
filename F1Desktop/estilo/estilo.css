@@ -171,12 +171,17 @@ label{
 }
 /*0,0,3*/
 body>main>div{
-    width: 30em;
+    width: auto;
     height: 30em;
 }
 /*0,0,4*/
 body main div> div{
     width: auto;
+    height: auto;
+}
+/*0,0,1*/
+img {
+    width: 80%;
     height: auto;
 }
 

@@ -5,8 +5,8 @@ import xml.etree.ElementTree as ET
 ##TODOS LOS TRAMOS : */tramo
 ##TODOS LOS PUNTOS : */tramo/punto
 
-nombreFichero = "F1Desktop/xml/circuito.xml"
-nombreSalida = "circuito"
+nombreFichero = "F1Desktop/xml/circuitoEsquema.xml"
+nombreSalida = "F1Desktop/xml/circuito"
 
 
 
@@ -36,16 +36,15 @@ def escrituraEpilogo(archivo):
 
 
 def tramoToKML(elemento, archivo, numeroPunto):
-  print(elemento.tag)
   archivo.write("<Placemark>\n")
   archivo.write("<name> punto ")
   archivo.write(str(numeroPunto))
   archivo.write("</name>\n")
   archivo.write("<Point><coordinates>\n")
-  coordenadas = elemento.find('punto/coordenadas')
-  longitud = coordenadas.find('longitud')
-  latitud = coordenadas.find('latitud')
-  altitud = coordenadas.find('altura')
+  coordenadas = elemento.find('{http://www.uniovi.es}punto/{http://www.uniovi.es}coordenadas')
+  longitud = coordenadas.find('{http://www.uniovi.es}longitud')
+  latitud = coordenadas.find('{http://www.uniovi.es}latitud')
+  altitud = coordenadas.find('{http://www.uniovi.es}altura')
   texto = longitud.text+","+latitud.text+","+altitud.text+ "\n"
   archivo.write(texto)
   archivo.write("</coordinates></Point></Placemark>\n")
@@ -82,7 +81,7 @@ def main():
 
   raiz = arbol.getroot()
 
-  expresionXPath = "*/tramo"
+  expresionXPath = "*/{http://www.uniovi.es}tramo"
 
   resultadoExpresion = raiz.findall(expresionXPath)
   numeroPunto =0

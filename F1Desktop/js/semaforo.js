@@ -109,7 +109,7 @@ class Semaforo{
             level.setAttribute("type", "number");
             level.setAttribute("name", "nivel");
             level.setAttribute("title", "nivel");
-            level.setAttribute("contenteditable", "false");
+            level.setAttribute("readonly", "");
             level.value= this.difficulty*10;
             labelLevel.appendChild(level);
     
@@ -121,7 +121,8 @@ class Semaforo{
             score.setAttribute("type", "number");
             score.setAttribute("name", "tiempo");
             score.setAttribute("title", "tiempo");
-            score.setAttribute("contenteditable", "false");
+            score.setAttribute("readonly", "");
+            score.setAttribute("step","0.001");
             score.value=diferencia;
             labelScore.appendChild(score);
     
