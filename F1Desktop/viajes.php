@@ -8,12 +8,12 @@
     <meta name="description" content="Reserva de viajes"/>
     <meta name="keywords" content="f1, formula1, viajes, turismo, reserva"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
-    <link rel="stylesheet" type="text/css" href="../estilo/estilo.css" />
-    <link rel="stylesheet" type="text/css" href="../estilo/layout.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
 
-    <link rel="icon" href="../multimedia/imagenes/favicon.ico"/>
+    <link rel="icon" href="multimedia/imagenes/favicon.ico"/>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="../js/viajes.js"></script>
+    <script src="js/viajes.js"></script>
    
 
     <?php 
@@ -116,19 +116,19 @@
 
 <body>
     <header>
-        <h1>F1 Desktop</h1>
+    <h1><a href="index.html">F1 Desktop</a></h1>
         <nav>
-            <a href="../index.html">Inicio</a>
-            <a href="../piloto.html" >Piloto</a>
-            <a href="../noticias.html">Noticias</a>
-            <a href="../calendario.html">Calendario</a>
-            <a href="../meteorologia.html">Meteorología</a>
-            <a href="../circuito.html">Circuito</a>
+            <a href="index.html">Inicio</a>
+            <a href="piloto.html" >Piloto</a>
+            <a href="noticias.html">Noticias</a>
+            <a href="calendario.html">Calendario</a>
+            <a href="meteorologia.html">Meteorología</a>
+            <a href="circuito.html">Circuito</a>
             <a href="viajes.php" class="active">Viajes</a>
-            <a href="../juegos.html">Juegos</a>
+            <a href="juegos.html">Juegos</a>
         </nav>
     </header>
-    <p><a href="../index.html">Inicio</a> >> Viajes</p>
+    <p><a href="index.html">Inicio</a> >> Viajes</p>
 
     <h2>Viajes</h2>
     <!-- Datos con el contenidos que aparece en el navegador -->

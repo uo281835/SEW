@@ -41,7 +41,7 @@ body header h1 a{
 /*0 0 4*/
 body header h1 a:visited{
     /*hereda el background color de header*/
-    color: #ffffff;
+    color: aqua;
     text-decoration: none;
 }
 

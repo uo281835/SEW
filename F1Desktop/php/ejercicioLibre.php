@@ -399,7 +399,7 @@ if(isset($_POST["exportar"])){
 
 <body>
     <header>
-        <h1>F1 Desktop</h1>
+        <h1><a href="../index.html">F1 Desktop</a></h1>
         <nav>
             <a href="../index.html">Inicio</a>
             <a href="../piloto.html">Piloto</a>
