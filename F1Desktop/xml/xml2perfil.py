@@ -20,10 +20,8 @@ def escrituraEpilogo(archivo, distancia):
     archivo.write("</svg>\n")
 
 def tramoToKML(elemento, archivo, distanciaPrevia):
-  print(elemento.tag)
  
   coordenadas = elemento.find('punto/coordenadas')
-  print(coordenadas.tag)
   altitud = coordenadas.find('altura')
   distancia = elemento.find('distancia')
   distanciaReal = distanciaPrevia + float(distancia.text)
@@ -32,7 +30,6 @@ def tramoToKML(elemento, archivo, distanciaPrevia):
   return float(distancia.text)
 
 def main():
-  print(main.__doc__)
   ##Abre el archivo xml
   try:
     archivo = open(nombreFichero, 'r')

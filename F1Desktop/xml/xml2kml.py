@@ -43,17 +43,14 @@ def tramoToKML(elemento, archivo, numeroPunto):
   archivo.write("</name>\n")
   archivo.write("<Point><coordinates>\n")
   coordenadas = elemento.find('punto/coordenadas')
-  print(coordenadas.tag)
   longitud = coordenadas.find('longitud')
   latitud = coordenadas.find('latitud')
   altitud = coordenadas.find('altura')
-  print(longitud.text,",",latitud.text,",",altitud.text)
   texto = longitud.text+","+latitud.text+","+altitud.text+ "\n"
   archivo.write(texto)
   archivo.write("</coordinates></Point></Placemark>\n")
 
 def main():
-  print(main.__doc__)
   ##Abre el archivo xml
   try:
     archivo = open(nombreFichero, 'r')
